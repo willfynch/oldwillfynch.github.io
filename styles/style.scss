@@ -1,0 +1,816 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* --------- NAVBAR SECTION------------------------------*/
+
+#nav-bar {
+    background-color: white;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    box-shadow: rgba(48, 48, 48, 0.1) 0px 1px;
+    
+    .navbar-toggler{
+        border: none;
+        border-radius: 0%;
+        
+
+        .navbar-toggler-icon{
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 161, 102, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+    }
+
+    .navbar-toggler:hover{
+        border: none;
+        border-radius: 0%;
+        color: #00a166
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+
+
+    }
+    
+}
+.divlink {
+    position: relative;
+    width: 80px;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: auto;
+    
+    .nav-link {
+        overflow: hidden;
+        position: relative;
+
+        
+        @media (min-width: 575px) {
+            padding: 0 15px 0 15px;
+            
+        }
+
+        z-index: 2;
+        
+        
+    }
+    
+    .nav-link::before {
+        //layout
+        content: "";
+        position: absolute;
+        width: 150%;
+        height: 0%;
+        bottom: 0px;
+        left: -15px;
+    
+        //style
+        background-color: #00a166;
+        transition: all ease-in-out .25s;
+        
+        z-index: -1;
+        
+    
+    }
+    
+    .nav-link:hover::before {
+        //layout
+        
+        @media (min-width: 575px) {
+            height: 50%;
+            
+        }
+        
+        
+    }
+
+    
+}
+
+
+
+#will {
+    font-family: 'Satisfy', cursive;
+}
+
+/* --------- PRESENTATION SECTION------------------------------*/
+
+/* --------- both columns------------------------------*/
+
+#presentation {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    min-height: 80vh;
+    text-align: left;
+
+    #rightcol {
+        margin-top: 150px;
+    }
+    #hipart, #rightcol {
+        
+        @media (min-width: 960px) {
+            margin-top: 150px;
+            
+        }
+    }
+
+/* --------- left column------------------------------*/
+
+    #imwill {
+        color: #00a166;
+        font-weight: bolder;
+        padding: 0;
+    }
+
+    #webdev {
+        color: #515151;
+        font-weight: lighter;
+        padding: 0;
+        
+    }
+
+/* --------- part with buttons ------------------------------*/
+
+
+    .mb-5 {
+
+        display: inline-block;
+
+
+        /* --------- get in touch ------------------------------*/
+    
+        #btn1 {
+            // layout
+            width: 220px;
+            height: 40px;
+            //style
+            background-color: #a1003b;
+            border-radius: 25px;
+            border: none;
+            // font
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;    
+            @media (max-width: 500px) {
+                width: 90vw;
+            }
+        }
+        
+        /* -------- dl portfolio ------------------------------*/
+
+        #btn2 {
+            //layout
+            width: 220px;
+            height: 40px;
+            @media (max-width: 500px) {
+                width: 90vw;
+            }
+            margin: 0 15px 0 0;
+            //style
+            background-color: #fff;
+            // border
+            border-radius: 25px;
+            border-color: #fff;
+            border: none;
+            //font
+            color: #a1003b;
+            font-size: 1.2rem;
+            font-weight: bold;
+            
+        }
+    
+        
+    }
+
+}
+
+/* --------- right column------------------------------*/
+
+/* --------- all pics -----------------------------*/
+
+// div with pics
+#imgpart {
+    
+    position: relative;
+    margin: auto;
+    height: 400px;
+    max-width: 400px;    
+    
+    
+    // frame wherein there is pic
+    .animationframe {
+        text-align: center;
+    }
+
+    // actual pic
+    .animationpics {
+        
+        width: 100px;
+        height: auto;
+        border-radius: 25px;
+        
+    }
+
+}
+
+// arrow "scroll"
+#imgpart::after {
+    content: "";
+    position: absolute;
+    
+        
+        top: 70%;
+        left: 20%;
+        width: 250px;
+        height: 50px;
+        -webkit-transform: skew(-50deg);
+        -moz-transform: skew(-70deg);
+        -o-transform: skew(-50deg);
+        background: rgba(0, 0, 0, 0.39);
+    
+}
+
+
+/* --------- html pic------------------------------*/
+
+#picframe1 {
+    perspective: 800px;
+    
+
+    #pic1 {
+        // layout
+        position: absolute;
+        right: 70px;
+        // style
+        transform-origin: center;
+        transform: rotateY(55deg);
+        
+
+        //animation
+        animation-name: levitate1;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        
+        
+    }
+
+    @keyframes levitate1 {
+        from {
+            transform: rotateY(55deg) translateY(5%);
+        }
+
+        25%{
+            transform:  rotateY(53deg)translateY(7%);
+        }
+
+        50%{
+            transform:  rotateY(51deg)translateY(10%);
+        }
+
+        75%{
+            transform:  rotateY(53deg)translateY(7%);
+        }
+
+        
+
+        100%{
+            transform:  rotateY(55deg) translateY(5%);
+        }
+    }
+
+}
+
+/* --------- css pic------------------------------*/
+
+
+#picframe2 {
+    perspective: 800px;
+    
+
+    #pic2 {
+        //layout
+        position: absolute;
+        top: 120px;
+        right: 15px;
+        //style
+        
+        transform-origin: center;
+        transform: rotateY(-80deg);
+        
+
+        //animation
+        animation-name: levitate2;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        
+    }
+
+    @keyframes levitate2 {
+        from {
+            transform: rotateY(35deg) translateY(-5%);
+        }
+
+        50%{
+            transform:  rotateY(60deg)translateY(5%);
+        }
+
+        100%{
+            transform:  rotateY(35deg) translateY(-5%);
+        }
+    }
+
+}
+
+/* --------- js pic------------------------------*/
+
+
+#picframe3 {
+    perspective: 1100px;
+    
+    
+    #pic3 {
+        //layout
+        position: absolute;
+        top: 100px;
+        right: 140px;
+        
+        //style
+        transform-origin: center;
+        transform: rotateY(-30deg);
+        
+
+        //animation
+        animation-name: levitate3;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes levitate3 {
+        from {
+            transform: rotateY(-30deg) translateY(-7%);
+        }
+
+        
+
+        50%{
+            transform: rotateY(-26deg) translateY(2%);
+        }
+
+        
+
+        100%{
+            transform: rotateY(-30deg) translateY(-7%);
+        }
+    }
+}
+
+
+/* --------- sass pic------------------------------*/
+
+
+#picframe4 {
+    perspective: 1100px;
+    
+    
+    #pic4 {
+        //layout
+        position: absolute;
+        top: 170px;
+        right: 90px;
+        
+        //style
+        transform-origin: center;
+        transform: rotateY(-30deg);
+        
+
+        //animation
+        animation-name: levitate4;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes levitate4 {
+        from {
+            transform: rotateY(-40deg) translateY(7%);
+        }
+
+        
+
+        50%{
+            transform: rotateY(-24deg) translateY(-2%);
+        }
+
+        
+
+        100%{
+            transform: rotateY(-40deg) translateY(7%);
+        }
+    }
+}
+
+/* --------- bootstrap pic------------------------------*/
+
+
+#picframe5 {
+    perspective: 1100px;
+    
+    
+    #pic5 {
+        //layout
+        position: absolute;
+        top: 0px;
+        left: 90px;
+        
+        //style
+        transform-origin: center;
+        transform: rotateY(-30deg);
+        
+
+        //animation
+        animation-name: levitate5;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes levitate5 {
+        from {
+            transform: rotateY(-40deg) translateY(7%);
+        }
+
+        
+
+        50%{
+            transform: rotateY(-24deg) translateY(-2%);
+        }
+
+        
+
+        100%{
+            transform: rotateY(-40deg) translateY(7%);
+        }
+    }
+}
+
+/* --------- react pic------------------------------*/
+
+
+#picframe6 {
+    perspective: 1100px;
+    
+    
+    #pic6 {
+        //layout
+        position: absolute;
+        top: 70px;
+        left: 30px;
+        
+        //style
+        transform-origin: center;
+        transform: rotateY(-30deg);
+        
+
+        //animation
+        animation-name: levitate6;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes levitate6 {
+        from {
+            transform: rotateY(-40deg) translateY(7%);
+        }
+
+        
+
+        50%{
+            transform: rotateY(-24deg) translateY(-2%);
+        }
+
+        
+
+        100%{
+            transform: rotateY(-40deg) translateY(7%);
+        }
+    }
+}
+
+/* --------- git pic------------------------------*/
+
+
+#picframe7 {
+    perspective: 1100px;
+    
+    
+    #pic7 {
+        //layout
+        position: absolute;
+        top: 160px;
+        right: 220px;
+        
+        //style
+        transform-origin: center;
+        transform: rotateY(-30deg);
+        
+
+        //animation
+        animation-name: levitate7;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes levitate7 {
+        from {
+            transform: rotateY(-40deg) translateY(-8%);
+        }
+
+        
+
+        
+
+        50%{
+            transform: rotateY(-30deg) translateY(0%);
+        }
+
+        
+    
+
+        
+
+        100%{
+            transform: rotateY(-40deg) translateY(-8%);
+        }
+    }
+}
+
+
+
+
+
+#ellipse {
+    
+    background-color: #00A166;
+    border-radius: 50% / 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100%;
+    height: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 600px) {
+        margin-top: 50px;
+    }
+    
+}
+
+
+
+
+/* --------- PROJECTS SECTION------------------------------*/
+
+//-------- whole div ----------------------------------
+
+#projects {
+    background-color: #00A166;
+    
+}
+
+// ---------The title --------------------------------
+
+#textbeforeprojects {
+    text-align: center;
+    .display-1 {
+    color: white;
+    font-weight: bolder;
+    }
+
+
+}
+
+//---------- Cards ---------------------------------
+
+
+
+.card {
+    border-radius: 0%;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    width: 420px;
+    height: 420px;
+
+    //900px or less
+    @media (max-width: 900px) {
+        width: 400px;
+        height: 400px;
+    }
+    //570px or less
+    @media (max-width: 570px) {
+        width: 350px;
+        height: 350px;
+    }
+    //450px or less
+    @media (max-width: 450px) {
+        width: 300px;
+        height: 300px;
+    }
+
+    //375px or less
+    @media (max-width: 380px) {
+        width: 260px;
+        height: 260px;
+    }
+
+    //360px or less
+    @media (max-width: 360px) {
+        width: 240px;
+        height: 240px;
+    }
+
+    //300px or less
+    @media (max-width: 300px) {
+        width: 180px;
+        height: 180px;
+    }
+
+    .card-body {
+        border-radius: 0%;
+        width: 100%;
+        padding: 0 20px ;
+        position: absolute;
+        
+        color: #fff;
+        left: 0;
+        z-index: 2;
+        transition: .5s;
+
+        top: 10%;
+    
+
+        @media (hover: hover) and (pointer: fine) {
+            top: -100%;
+        }
+
+        @media (max-width: 300px) {
+            font-size: .7rem;
+            margin: 0;
+            .btn {
+                font-size: .6rem;
+                height: 20px;
+                padding: 0;
+                margin: 0;
+            }
+        }
+        
+    }
+    
+    .card-img-top {
+        border-radius: 0%;
+    }
+
+    .card-img-overlay {
+        content: "";
+        background: rgb(2,0,36);
+        background: linear-gradient(135deg, rgba(2,0,36,.5) 0%, rgba(9,9,121,.3) 20%, rgba(0,212,255,0.3) 100%);     }
+    
+}
+
+.card::before{
+    position: absolute;
+    content: "";
+    width: 160%;
+    height: 220%;
+    background: rgba(161,0,59, 0.7);
+    top: 120%;
+    
+    z-index: 1;
+    transform-origin: center top 0;
+    transition: .5s;
+}
+
+.card:hover::before{
+    top: 0%;
+}
+
+
+.card:hover .card-body {
+    top: 40px;
+    
+    
+}
+
+#projects {
+    
+    
+    padding: 5vh;
+}
+
+
+
+
+/* --------- contact section------------------------------*/
+
+#revellipse {
+    
+    background-color: #00A166;
+    border-radius: 50% / 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: 100%;
+    height: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+    
+}
+
+
+    
+    
+    
+    #work {
+        
+        min-height: 100vh;
+        
+
+        #social-row{
+            
+        }
+        #contact-form-row {
+            
+
+            .contact-form {
+                
+                .form-control {
+                    //layout
+                    margin: -5px;
+                    width: 50vw;
+                    @media (max-width: 750px) {
+                        width: 80vw;
+                    }
+                    
+                    //style
+                    border: none;
+                    border-radius: 0%;
+                    border-bottom: solid black thin;
+                    transition: all .2s ease-in-out;
+                    
+
+                }
+
+                .form-control:focus{
+                    transform: scale3d(110%, 110%, 110%);
+                    box-shadow: none;
+                    transition: all .2s ease-in-out;
+                    color: #a1003b;
+                }
+
+                .submit {
+                    border: none;
+                    border-radius: 25px; 
+                    background-color: #a1003b ;
+                    color: white;
+                    font-size: 1.2rem;
+                    font-weight: bold;  
+                }
+            }
+
+        }
+    }
+
+    #sectionellipse {
+        
+    }
+
+    #footer {
+        
+        height: 10vh;
+        background-color: #00A166;
+        
+        width: 100%;
+        
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+
+
