@@ -94,6 +94,16 @@ html {
   /* --------- part with buttons ------------------------------*/
 }
 
+#presentation #skills {
+  position: absolute;
+  top: 350px;
+  left: 55px;
+  width: 300px;
+  height: 50px;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
 #presentation #rightcol {
   margin-top: 150px;
 }
@@ -162,6 +172,7 @@ html {
 /* --------- all pics -----------------------------*/
 #imgpart {
   position: relative;
+  padding: 0 20px 0 20px;
   margin: auto;
   height: 400px;
   max-width: 400px;
@@ -180,14 +191,13 @@ html {
 #imgpart::after {
   content: "";
   position: absolute;
-  top: 70%;
-  left: 20%;
+  border-radius: 50%;
+  top: 65%;
+  left: 15%;
+  margin: auto;
   width: 250px;
-  height: 50px;
-  -webkit-transform: skew(-50deg);
-  -moz-transform: skew(-70deg);
-  -o-transform: skew(-50deg);
-  background: rgba(0, 0, 0, 0.39);
+  height: 70px;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 /* --------- html pic------------------------------*/
@@ -268,7 +278,7 @@ html {
 #picframe2 #pic2 {
   position: absolute;
   top: 120px;
-  right: 15px;
+  right: 30px;
   -webkit-transform-origin: center;
           transform-origin: center;
   -webkit-transform: rotateY(-80deg);
@@ -430,7 +440,7 @@ html {
 #picframe5 #pic5 {
   position: absolute;
   top: 0px;
-  left: 90px;
+  left: 70px;
   -webkit-transform-origin: center;
           transform-origin: center;
   -webkit-transform: rotateY(-30deg);
@@ -484,7 +494,7 @@ html {
 #picframe6 #pic6 {
   position: absolute;
   top: 70px;
-  left: 30px;
+  left: 20px;
   -webkit-transform-origin: center;
           transform-origin: center;
   -webkit-transform: rotateY(-30deg);
@@ -679,6 +689,43 @@ html {
   top: 10%;
 }
 
+.card .card-body .card-title {
+  font-size: 1.8rem;
+  color: silver;
+}
+
+.card .card-body .card-subtitle {
+  color: #dadada;
+}
+
+.card .card-body .card-text {
+  color: silver;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 570px) {
+  .card .card-body .card-text {
+    margin-top: 40px;
+  }
+}
+
+.card .card-body .btn {
+  font-size: 1.1rem;
+  background-color: rgba(0, 0, 0, 0);
+  border: solid #00A166 thin;
+  color: silver;
+}
+
+@media (min-width: 570px) {
+  .card .card-body .btn {
+    margin-top: 40px;
+  }
+}
+
+.card .card-body .btn:hover {
+  border: solid #ffffff thin;
+}
+
 @media (hover: hover) and (pointer: fine) {
   .card .card-body {
     top: -100%;
@@ -704,8 +751,15 @@ html {
 
 .card .card-img-overlay {
   content: "";
-  background: #020024;
-  background: linear-gradient(135deg, rgba(2, 0, 36, 0.5) 0%, rgba(9, 9, 121, 0.3) 20%, rgba(0, 212, 255, 0.3) 100%);
+  background: rgba(0, 0, 0, 0.8);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .card .card-img-overlay {
+    background: #020024;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(16, 160, 178, 0.4)), color-stop(20%, rgba(16, 160, 178, 0.4)), to(rgba(16, 160, 178, 0.4)));
+    background: linear-gradient(0deg, rgba(16, 160, 178, 0.4) 0%, rgba(16, 160, 178, 0.4) 20%, rgba(16, 160, 178, 0.4) 100%);
+  }
 }
 
 .card::before {
@@ -713,7 +767,7 @@ html {
   content: "";
   width: 160%;
   height: 220%;
-  background: rgba(161, 0, 59, 0.7);
+  background: rgba(0, 0, 0, 0.7);
   top: 120%;
   z-index: 1;
   -webkit-transform-origin: center top 0;

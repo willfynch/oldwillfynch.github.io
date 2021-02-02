@@ -40,8 +40,9 @@ html {
 
 
     }
-    
 }
+
+
 .divlink {
     position: relative;
     width: 80px;
@@ -111,6 +112,16 @@ html {
     color: black;
     min-height: 80vh;
     text-align: left;
+
+    #skills {
+        position: absolute;
+        top: 350px;
+        left: 55px;
+        width: 300px;
+        height: 50px;
+        
+        transition: all .3s ease-in-out;
+    }
 
     #rightcol {
         margin-top: 150px;
@@ -201,6 +212,7 @@ html {
 #imgpart {
     
     position: relative;
+    padding: 0 20px 0 20px;
     margin: auto;
     height: 400px;
     max-width: 400px;    
@@ -225,17 +237,16 @@ html {
 // arrow "scroll"
 #imgpart::after {
     content: "";
-    position: absolute;
-    
-        
-        top: 70%;
-        left: 20%;
+        position: absolute;
+        border-radius: 50%;
+        top: 65%;
+        left: 15%;
+        margin: auto;
         width: 250px;
-        height: 50px;
-        -webkit-transform: skew(-50deg);
-        -moz-transform: skew(-70deg);
-        -o-transform: skew(-50deg);
-        background: rgba(0, 0, 0, 0.39);
+        height: 70px;
+        
+        
+        background: rgba(0, 0, 0, 0.2);
     
 }
 
@@ -301,7 +312,7 @@ html {
         //layout
         position: absolute;
         top: 120px;
-        right: 15px;
+        right: 30px;
         //style
         
         transform-origin: center;
@@ -432,7 +443,7 @@ html {
         //layout
         position: absolute;
         top: 0px;
-        left: 90px;
+        left: 70px;
         
         //style
         transform-origin: center;
@@ -476,7 +487,7 @@ html {
         //layout
         position: absolute;
         top: 70px;
-        left: 30px;
+        left: 20px;
         
         //style
         transform-origin: center;
@@ -650,21 +661,55 @@ html {
     }
 
     .card-body {
+        //layout
         border-radius: 0%;
         width: 100%;
         padding: 0 20px ;
         position: absolute;
         
+        //style
         color: #fff;
         left: 0;
         z-index: 2;
         transition: .5s;
 
         top: 10%;
-    
+        
+        .card-title {
+            font-size: 1.8rem;
+            color: silver;                        
+        }
+
+        .card-subtitle {
+            color:rgba(218, 218, 218, 1)
+        }
+
+        .card-text {
+            color: silver;
+            @media (min-width: 570px) {
+                margin-top: 40px;
+            }
+            font-size: 1.2rem
+        }
+        
+        .btn {
+            @media (min-width: 570px) {
+                margin-top: 40px;
+            }
+            
+            font-size: 1.1rem;
+            background-color: rgba(0,0,0,0);
+            border: solid #00A166 thin;
+            color: silver;
+        }
+
+        .btn:hover {
+            border: solid #ffffff thin;
+        }
 
         @media (hover: hover) and (pointer: fine) {
             top: -100%;
+            
         }
 
         @media (max-width: 300px) {
@@ -686,9 +731,11 @@ html {
 
     .card-img-overlay {
         content: "";
-        background: rgb(2,0,36);
-        background: linear-gradient(135deg, rgba(2,0,36,.5) 0%, rgba(9,9,121,.3) 20%, rgba(0,212,255,0.3) 100%);     }
-    
+        background: rgba(0, 0, 0, 0.8);
+        @media (hover: hover) and (pointer: fine) {
+            background: rgb(2,0,36);
+            background: linear-gradient(0deg, rgba(16,160,178,.4) 0%, rgba(16,160,178,.4)20%, rgba(16,160,178,.4) 100%);     }
+        }
 }
 
 .card::before{
@@ -696,7 +743,7 @@ html {
     content: "";
     width: 160%;
     height: 220%;
-    background: rgba(161,0,59, 0.7);
+    background: rgba(0, 0, 0, 0.7);
     top: 120%;
     
     z-index: 1;
