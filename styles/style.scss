@@ -706,7 +706,7 @@ html {
         .btn:hover {
             border: solid #ffffff thin;
         }
-
+        top: -100%;
         @media (hover: hover) and (pointer: fine) {
             top: -100%;
             
@@ -731,11 +731,13 @@ html {
 
     .card-img-overlay {
         content: "";
-        /*background: rgba(0, 0, 0, 0.8);*/
+        background: rgba(0, 0, 0, 0.8);
         @media (hover: hover) and (pointer: fine) {
             background: rgb(2,0,36);
             background: linear-gradient(0deg, rgba(16,160,178,.4) 0%, rgba(16,160,178,.4)20%, rgba(16,160,178,.4) 100%);     }
         }
+        background: rgb(2,0,36);
+            background: linear-gradient(0deg, rgba(16,160,178,.4) 0%, rgba(16,160,178,.4)20%, rgba(16,160,178,.4) 100%);     }
 }
 
 .card::before{

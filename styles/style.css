@@ -687,6 +687,7 @@ html {
   -webkit-transition: .5s;
   transition: .5s;
   top: 10%;
+  top: -100%;
 }
 
 .card .card-body .card-title {
@@ -751,7 +752,7 @@ html {
 
 .card .card-img-overlay {
   content: "";
-  /*background: rgba(0, 0, 0, 0.8);*/
+  background: rgba(0, 0, 0, 0.8);
 }
 
 @media (hover: hover) and (pointer: fine) {
