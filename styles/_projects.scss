@@ -1,0 +1,296 @@
+/* --------- PROJECTS SECTION------------------------------*/
+
+//-------- whole div ----------------------------------
+
+#projects {
+    background-color: #00A166;
+    padding-bottom: 150px;
+}
+
+// ---------The title --------------------------------
+
+#textbeforeprojects {
+    text-align: center;
+
+    .display-1 {
+    color: white;
+    font-weight: bolder;
+    }
+
+
+}
+
+//---------- CARDS ---------------------------------
+
+// RESPONSIVENESS
+
+
+.card {
+
+        // ----- Size --------//
+        width: 420px;
+        height: 420px;
+        //900px or less
+        @media (max-width: 900px) {
+            width: 400px;
+            height: 400px;
+        }
+        //570px or less
+        @media (max-width: 570px) {
+            width: 350px;
+            height: 350px;
+        }
+        //450px or less
+        @media (max-width: 450px) {
+            width: 300px;
+            height: 300px;
+        }
+        //375px or less
+        @media (max-width: 380px) {
+            width: 260px;
+            height: 260px;
+        }
+        //360px or less
+        @media (max-width: 360px) {
+            width: 240px;
+            height: 240px;
+        }
+        //300px or less
+        @media (max-width: 300px) {
+            width: 180px;
+            height: 180px;
+        }
+
+
+
+    .card-img-top {}
+    .card-img-overlay {
+
+        // default : dark on smartphones
+        background: rgba(0, 0, 0, 0.6);
+
+        //laptops : gradient 
+        @media (hover: hover) and (pointer: fine) {
+            background: rgb(2,0,36);
+            background: linear-gradient(0deg, rgba(16,160,178,.4) 0%, rgba(16,160,178,.4)20%, rgba(16,160,178,.4) 100%);     
+        }
+    }
+    .card-body {
+        @media (hover: hover) and (pointer: fine){
+            top: -100%;
+        }
+
+        @media (max-width: 300px) {
+            font-size: .7rem;
+            margin: 0;
+        }
+
+        .card-title {}
+        .card-subtitle {}
+
+        .card-text {
+            @media (min-width: 570px) {
+                margin-top: 40px;
+            }
+
+            @media screen and (orientation:portrait){
+                display: none; 
+            }
+        }
+
+        .btn {
+            @media (max-width: 300px) {
+                font-size: .5rem;
+                height: 20px;
+                padding: 0;
+                margin: 0;
+            }
+        }
+
+        .btn:hover {}
+    }
+}
+
+.card::before {
+
+    // default : on phone screen
+    top: 120%;
+    // laptop with hover and fine pointer
+    /*@media (hover: hover) and (pointer: fine){
+        top: 120%;
+    }*/
+}
+
+// on laptop when hovered card::before appears from bottom to top
+.card:hover::before{
+    @media (hover: hover) and (pointer: fine){
+        top: 0%;
+    }
+}
+
+// on laptop when hovered card-body appears
+.card:hover .card-body {
+    @media (hover: hover) and (pointer: fine){
+        top: 40px;
+    }
+}
+
+
+
+
+
+//-------- LAYOUT
+.card {
+    position: relative;
+    .card-img-top {}
+
+    .card-img-overlay {}
+
+    .card-body {
+        z-index: 2;
+        left: 0;
+        width: 100%;
+        padding: 20px 20px 0 20px;
+        position: absolute;
+        .card-title {}
+        .card-subtitle {}
+        .card-text {}
+        .btn {}
+        .btn:hover {}
+    }
+}
+
+.card::before {
+    position: absolute;
+    content: "";
+    width: 160%;
+    height: 220%;
+    z-index: 1;
+}
+
+
+
+
+//-------- STYLE
+.card {
+    border-radius: 0%;
+    // hide the card::before part
+    overflow: hidden;
+    border: none;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(16,160,178,.4) 0%, rgba(16,160,178,.4)20%, rgba(16,160,178,.4) 100%);     
+    .card-img-top {}
+
+    .card-img-overlay {
+
+        
+    }
+
+    .card-body {
+        color: #fff;
+        transition: .5s;
+
+        .card-title {
+            font-size: 1.8rem;
+            color: silver; 
+        }
+
+        .card-subtitle {
+            color:rgba(218, 218, 218, 1)
+        }
+
+        .card-text {
+            color: silver;
+            font-size: 1.2rem
+        }
+
+        .btn {}
+        .btn:hover {}
+    }
+}
+.card::before {
+    background: rgba(0, 0, 0, 0.7);
+    transform-origin: center top 0;
+    transition: .5s;
+}
+
+// ------------ card
+
+.card {
+    
+    
+    
+    
+
+    // ------------ card body
+
+    .card-body {
+        //layout
+        
+        
+        //style
+        
+        
+        
+        
+        
+        
+        .card-title {
+                                   
+        }
+
+        .card-subtitle {
+            
+        }
+
+        .card-text {
+
+            // layout
+
+            //responsiveness
+            
+
+
+            //style
+            
+
+            
+        }
+        
+        .btn {
+            @media (min-width: 570px) {
+                margin-top: 40px;
+            }
+            
+            font-size: 1.1rem;
+            background-color: rgba(0,0,0,0);
+            border: solid #00A166 thin;
+            color: silver;
+        }
+
+        .btn:hover {
+            border: solid #ffffff thin;
+        }
+        
+
+        // for laptop
+        
+        
+    }
+    
+    .card-img-top {
+        border-radius: 0%;
+    }
+
+    .card-img-overlay {
+        
+        
+    }
+
+
+    
+}
+
+
+
+

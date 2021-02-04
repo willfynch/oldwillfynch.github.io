@@ -42,9 +42,9 @@
                     <!------------------navlinks --------------->
                     <div class="collapse navbar-collapse"  id="navbarSupportedContent" > <!--data-bs-target=".navbar-collapse"-->
                         <div class="navbar-nav ms-auto" >       
-                            <div class="divlink" ><a id="testlink1"   class="nav-link active js-scroll-trigger" href="#hipart">About</a></div>
+                            <div class="divlink" ><a id="testlink1"   class="nav-link active js-scroll-trigger" href="#">About</a></div>
                             <div class="divlink"><a id="testlink2" class="nav-link active js-scroll-trigger" href="#ellipse">Work</a></div>
-                            <div class="divlink"><a id="testlink3"   class="nav-link active js-scroll-trigger" href="#revellipse">Contact</a></div>
+                            <div class="divlink"><a id="testlink3"   class="nav-link active js-scroll-trigger" href="#contact">Contact</a></div>
                         </div>
                     </div>          
                 </div>
@@ -63,47 +63,45 @@
 
               <!-- COLUMN RIGHT-->
               <div class="col-lg-6" id="rightcol">
-
-
-                <!--<img class="img-fluid d-block mx-auto mt-5" id="avatar" src="./pics/avatar.png" alt="avatar">-->
-                <br><br>
+                
+                
                 <div id="imgpart">
-                  <div id="skills"></div>
+                  
                   <figure id="picframe1" class="animationframe">
-                    <img id="pic1" class="animationpics" src="./pics/htmlicon.png" alt="">
+                    <img id="pic1" class="animationpics" src="./pics/htmlicon.png" alt="html">
                   </figure>
   
                   <figure id="picframe2" class="animationframe">
-                    <img id="pic2" class="animationpics" src="./pics/cssicon.png" alt="">
+                    <img id="pic2" class="animationpics" src="./pics/cssicon.png" alt="css">
                   </figure>
   
                   <figure id="picframe3" class="animationframe">
-                    <img id="pic3" class="animationpics" src="./pics/jsicon.png" alt="">
+                    <img id="pic3" class="animationpics" src="./pics/jsicon.png" alt="JavaScript">
                   </figure>
 
                   <figure id="picframe4" class="animationframe">
-                    <img id="pic4" class="animationpics" src="./pics/sassicon.png" alt="">
+                    <img id="pic4" class="animationpics" src="./pics/sassicon.png" alt="Sass">
                   </figure>
 
                   <figure id="picframe5" class="animationframe">
-                    <img id="pic5" class="animationpics" src="./pics/bootstrapicon.png" alt="">
+                    <img id="pic5" class="animationpics" src="./pics/bootstrapicon.png" alt="Bootstrap">
                   </figure>
 
                   <figure id="picframe6" class="animationframe">
-                    <img id="pic6" class="animationpics" src="./pics/reacticon.png" alt="">
+                    <img id="pic6" class="animationpics" src="./pics/reacticon.png" alt="React">
                   </figure>
 
                   <figure id="picframe7" class="animationframe">
-                    <img id="pic7" class="animationpics" src="./pics/giticon.png" alt="">
+                    <img id="pic7" class="animationpics" src="./pics/giticon.png" alt="Git">
                   </figure>
                 </div>
               </div>
 
               <div class="col-lg-6 " id="hipart">
-                <br><br><p id="imwill" class="display-1 mt-5 mb-0 pb-0">Hi. I'm William.</p>
+                <p id="imwill" class="display-1 mt-5 mb-0 pb-0">Hi. I'm William.</p>
                 <p id="webdev" class="display-6 mb-0 pb-0">A Front-End Developer.</p>
                 
-                <p>You have hard times finding customers ? Troubles building a website
+                <p id="hookmessage">You have hard times finding customers ? Troubles building a website
                   that will finally attract them ? Maybe you just lack time. 
                   <strong>Maybe you need someone to 
                     handle this website part for you.</strong> 
@@ -149,7 +147,9 @@
                 
                   <div class="card">
                     <img src="./pics/question.png" class="card-img-top" alt="...">
+                    
                     <div class="card-img-overlay card-inverse"></div>
+
                     <div class="card-body">
                       <h5 class="card-title">HelloWatch</h5>
                       <h6 class="card-subtitle mb-2">Website</h6>
@@ -158,6 +158,7 @@
                       </p>
                       <a href="#" class="btn btn-primary ">See project</a>
                     </div>
+
                   </div>
           
                 
@@ -233,34 +234,28 @@
         </section>
             
         
-        <!------------- collab section ------------------->    
+          
         
-        <section>
+        <!--<section>
           <div id="revellipse">
             
           </div>
-        </section>
-         
-        <section  id="work">
-          <div class="container">
-            <div class="row mt-5 d-flex justify-content-center" id="contact">
-              <p class='display-3 d-flex justify-content-center' style="text-align: center;">Let's make something
-                great together
-              </p>
-            </div>
-            <!-------SOCIAL NETWORK ICONS------------------------->
-            <div class="row mt-5 d-flex justify-content-center" id="social-row">
-              
-              <div class="col-auto"><i class="fab fa-github fa-3x"></i></div>
-              <div class="col-auto"><i class="fab fa-linkedin fa-3x"></i></div>
-              <div class="col-auto"><i class="fas fa-mobile-alt fa-3x"></i></div>
-              <div class="col-auto"><i class="fas fa-at fa-3x"></i></div>
-              <div class="col-auto"><i class="fab fa-twitter-square fa-3x"></i></div>
-              <p class='mt-5'>Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Atque, aspernatur?</p>
-            </div>
+        </section>-->
 
-            <!-------CONTACT FORM------------------------->
+        <!------------- form section ------------------->  
+         
+        <section  id="contact">
+          <div class="container">
+
+            <!--  Text before form -->
+            <div class="row mt-5 d-flex justify-content-center" id="contacttextrow">
+              <p class='display-3 d-flex justify-content-center' id="contacttext">Contact
+              </p>
+              <p class='mt-2 d-flex justify-content-center'>Let's work together !</p>
+            </div>
+            
+
+            <!-------form------------------------->
             <div class="row mt-5 " id="contact-form-row">
               
               <div class="contact-form d-flex justify-content-center">
@@ -291,27 +286,30 @@
 
 
             </div>
-            
-            
 
           </div>
         </section>
 
         <!------------- footer section ------------------->   
-        
-        <section id="sectionellipse">
-          <div id="ellipse">
-            
-          </div>
-        </section>
+  
 
         <section  id="footer">
           <div class="container" id="bottom">
-            
             <div class="row">
-              hello world
-            </div>
 
+              <!-------social icons------------------------->
+            <div class="row mx-auto mt-3 d-flex justify-content-center" id="social-row">
+              
+              <div class="col-auto"><a href="https://github.com/willfynch" target="_blank"><i class="fab fa-github fa-2x"></i></a></div>
+              <div class="col-auto"><a href="https://www.linkedin.com/in/williamfinzy/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></div>
+              <div class="col-auto"><i class="fas fa-mobile-alt fa-2x"></i></div>
+              <div class="col-auto"><i class="fas fa-at fa-2x"></i></div>
+              <div class="col-auto"><a href="https://twitter.com/willfynch" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a></div>
+              
+            </div>
+            <div>
+              <p class='mt-2 d-flex justify-content-center'>William Finzy ©2021</p>
+            </div>
           </div>
         </section>
 

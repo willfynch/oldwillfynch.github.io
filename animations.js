@@ -35,21 +35,14 @@ function getPosition(el) {
 // ------------ FOR PIC 1 ---------------------------
 
 function picsAnimation1() {
-    /*
-    // show text
-    will be added after first release
-    
-    $("#skills").text("BONSOIR");
-   
-    $("#skills").css("display", "block");*/
-    
-    
+  
 
     // move pics to destination
      
         anime({
             targets: pic1,
-            width: "120px",
+            width: "100%",
+            height: "100%",
             rotateY: 200,
             scale: 2,
             rotate: '1turn',
@@ -66,7 +59,8 @@ function picsAnimationBack1() {
         
         anime({
             targets: pic1,
-            width: "100px",
+            width: "80%",
+            height: "80%",
             scale: 2,
             rotate: '1turn',
             duration: 1500
@@ -82,7 +76,8 @@ function picsAnimation2() {
      
         anime({
             targets: pic2,
-            width: "120px",
+            width: "100%",
+            height: "100%",
             
             scale: {
                 delay: 800,
@@ -98,7 +93,8 @@ function picsAnimationBack2() {
         
         anime({
             targets: pic2,
-            width: "100px",
+            width: "80%",
+            height: "80%",
             scale: {
                 delay: 800,
                 value: 3
@@ -117,7 +113,8 @@ function picsAnimation3() {
      
         anime({
             targets: pic3,
-            width: "120px",
+            width: "100%",
+            height: "100%",
             scale: {
                 delay: 800,
                 value: 1.5
@@ -132,7 +129,8 @@ function picsAnimationBack3() {
         
         anime({
             targets: pic3,
-            width:"100px",
+            width: "80%",
+            height: "80%",
             scale: {
                 delay: 800,
                 value: 3
@@ -151,7 +149,8 @@ function picsAnimation4() {
      
         anime({
             targets: pic4,
-            width: "120px",
+            width: "100%",
+            height: "100%",
             scale: {
                 delay: 800,
                 value: 1.5
@@ -166,7 +165,8 @@ function picsAnimationBack4() {
         
         anime({
             targets: pic4,
-            width:"100px",
+            width: "80%",
+            height: "80%",
             scale: {
                 delay: 800,
                 value: 3
@@ -184,7 +184,8 @@ function picsAnimation5() {
      
         anime({
             targets: pic5,
-            width: "120px",
+            width: "100%",
+            height: "100%",
             scale: {
                 delay: 800,
                 value: 1.5
@@ -199,7 +200,8 @@ function picsAnimationBack5() {
         
         anime({
             targets: pic5,
-            width:"100px",
+            width: "80%",
+            height: "80%",
             scale: {
                 delay: 800,
                 value: 3
@@ -217,7 +219,8 @@ function picsAnimation6() {
      
         anime({
             targets: pic6,
-            width: "120px",
+            width: "100%",
+            height: "100%",
             scale: {
                 delay: 800,
                 value: 1.5
@@ -232,7 +235,8 @@ function picsAnimationBack6() {
         
         anime({
             targets: pic6,
-            width:"100px",
+            width: "80%",
+            height: "80%",
             scale: {
                 delay: 800,
                 value: 3
@@ -251,7 +255,8 @@ function picsAnimation7() {
      
         anime({
             targets: pic7,
-            width: "120px",
+            width: "100%",
+            height: "100%",
             scale: {
                 delay: 800,
                 value: 1.5
@@ -266,7 +271,8 @@ function picsAnimationBack7() {
         
         anime({
             targets: pic7,
-            width:"100px",
+            width: "80%",
+            height: "80%",
             scale: {
                 delay: 800,
                 value: 3
@@ -307,5 +313,4 @@ pic5.addEventListener("mouseout", picsAnimationBack5);
 pic6.addEventListener("mouseout", picsAnimationBack6);
 pic7.addEventListener("mouseout", picsAnimationBack7);
 
-//arrow shape in mobile layout
-
+//arrow shape in mobile layout 

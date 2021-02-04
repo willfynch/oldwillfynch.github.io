@@ -1,0 +1,88 @@
+/* --------- contact section------------------------------*/
+a {text-decoration: none;}
+#revellipse {
+    
+    background-color: #00A166;
+    border-radius: 50% / 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    width: 100%;
+    height: 20vh;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+    
+    #contact {
+        
+        min-height: 80vh;
+        
+        #contacttext {
+            padding-top: 75px;
+        }
+
+        
+
+        #contact-form-row {
+            
+
+            .contact-form {
+                
+                .form-control {
+                    //layout
+                    margin: -5px;
+                    width: 50vw;
+                    @media (max-width: 750px) {
+                        width: 80vw;
+                    }
+                    
+                    //style
+                    border: none;
+                    border-radius: 0%;
+                    border-bottom: solid black thin;
+                    transition: all .2s ease-in-out;
+                    
+
+                }
+
+                .form-control:focus{
+                    transform: scale(150%, 150%);
+                    
+                    box-shadow: none;
+                    transition: all .2s ease-in-out;
+                    color: #a1003b;
+                }
+
+                .submit {
+                    border: none;
+                    border-radius: 25px; 
+                    background-color: #a1003b ;
+                    color: white;
+                    font-size: 1.2rem;
+                    font-weight: bold;  
+                }
+            }
+
+        }
+    }
+
+  
+
+    #footer {
+        
+        //layout
+        min-height: 15vh;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        //style
+        
+        background-color: #00A166;
+        
+
+        #social-row{
+            a {
+                color: black;
+            }
+        }
+    }
