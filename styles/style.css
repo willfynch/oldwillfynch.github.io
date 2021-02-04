@@ -90,6 +90,7 @@ html {
   color: black;
   min-height: 80vh;
   text-align: left;
+  /* --------- RIGHT COLUMN------------------------------*/
   /* --------- left column------------------------------*/
   /* --------- part with buttons ------------------------------*/
 }
@@ -106,71 +107,17 @@ html {
 
 #presentation #rightcol {
   margin-top: 150px;
+  /* --------- all pics -----------------------------*/
+  /* --------- html pic------------------------------*/
+  /* --------- css pic------------------------------*/
+  /* --------- js pic------------------------------*/
+  /* --------- sass pic------------------------------*/
+  /* --------- bootstrap pic------------------------------*/
+  /* --------- react pic------------------------------*/
+  /* --------- git pic------------------------------*/
 }
 
-@media (min-width: 960px) {
-  #presentation #hipart, #presentation #rightcol {
-    margin-top: 150px;
-  }
-}
-
-#presentation #imwill {
-  color: #00a166;
-  font-weight: bolder;
-  padding: 0;
-}
-
-#presentation #webdev {
-  color: #515151;
-  font-weight: lighter;
-  padding: 0;
-}
-
-#presentation .mb-5 {
-  display: inline-block;
-  /* --------- get in touch ------------------------------*/
-  /* -------- dl portfolio ------------------------------*/
-}
-
-#presentation .mb-5 #btn1 {
-  width: 220px;
-  height: 40px;
-  background-color: #a1003b;
-  border-radius: 25px;
-  border: none;
-  color: white;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-@media (max-width: 500px) {
-  #presentation .mb-5 #btn1 {
-    width: 90vw;
-  }
-}
-
-#presentation .mb-5 #btn2 {
-  width: 220px;
-  height: 40px;
-  margin: 0 15px 0 0;
-  background-color: #fff;
-  border-radius: 25px;
-  border-color: #fff;
-  border: none;
-  color: #a1003b;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-@media (max-width: 500px) {
-  #presentation .mb-5 #btn2 {
-    width: 90vw;
-  }
-}
-
-/* --------- right column------------------------------*/
-/* --------- all pics -----------------------------*/
-#imgpart {
+#presentation #rightcol #imgpart {
   position: relative;
   padding: 0 20px 0 20px;
   margin: auto;
@@ -178,17 +125,17 @@ html {
   max-width: 400px;
 }
 
-#imgpart .animationframe {
+#presentation #rightcol #imgpart .animationframe {
   text-align: center;
 }
 
-#imgpart .animationpics {
+#presentation #rightcol #imgpart .animationpics {
   width: 100px;
   height: auto;
   border-radius: 25px;
 }
 
-#imgpart::after {
+#presentation #rightcol #imgpart::after {
   content: "";
   position: absolute;
   border-radius: 50%;
@@ -200,15 +147,15 @@ html {
   background: rgba(0, 0, 0, 0.2);
 }
 
-/* --------- html pic------------------------------*/
-#picframe1 {
+#presentation #rightcol #picframe1 {
   -webkit-perspective: 800px;
           perspective: 800px;
 }
 
-#picframe1 #pic1 {
+#presentation #rightcol #picframe1 #pic1 {
   position: absolute;
   right: 70px;
+  top: 45px;
   -webkit-transform-origin: center;
           transform-origin: center;
   -webkit-transform: rotateY(55deg);
@@ -269,13 +216,12 @@ html {
   }
 }
 
-/* --------- css pic------------------------------*/
-#picframe2 {
+#presentation #rightcol #picframe2 {
   -webkit-perspective: 800px;
           perspective: 800px;
 }
 
-#picframe2 #pic2 {
+#presentation #rightcol #picframe2 #pic2 {
   position: absolute;
   top: 120px;
   right: 30px;
@@ -323,13 +269,12 @@ html {
   }
 }
 
-/* --------- js pic------------------------------*/
-#picframe3 {
+#presentation #rightcol #picframe3 {
   -webkit-perspective: 1100px;
           perspective: 1100px;
 }
 
-#picframe3 #pic3 {
+#presentation #rightcol #picframe3 #pic3 {
   position: absolute;
   top: 100px;
   right: 140px;
@@ -377,13 +322,12 @@ html {
   }
 }
 
-/* --------- sass pic------------------------------*/
-#picframe4 {
+#presentation #rightcol #picframe4 {
   -webkit-perspective: 1100px;
           perspective: 1100px;
 }
 
-#picframe4 #pic4 {
+#presentation #rightcol #picframe4 #pic4 {
   position: absolute;
   top: 170px;
   right: 90px;
@@ -431,13 +375,12 @@ html {
   }
 }
 
-/* --------- bootstrap pic------------------------------*/
-#picframe5 {
+#presentation #rightcol #picframe5 {
   -webkit-perspective: 1100px;
           perspective: 1100px;
 }
 
-#picframe5 #pic5 {
+#presentation #rightcol #picframe5 #pic5 {
   position: absolute;
   top: 0px;
   left: 70px;
@@ -485,13 +428,12 @@ html {
   }
 }
 
-/* --------- react pic------------------------------*/
-#picframe6 {
+#presentation #rightcol #picframe6 {
   -webkit-perspective: 1100px;
           perspective: 1100px;
 }
 
-#picframe6 #pic6 {
+#presentation #rightcol #picframe6 #pic6 {
   position: absolute;
   top: 70px;
   left: 20px;
@@ -539,13 +481,12 @@ html {
   }
 }
 
-/* --------- git pic------------------------------*/
-#picframe7 {
+#presentation #rightcol #picframe7 {
   -webkit-perspective: 1100px;
           perspective: 1100px;
 }
 
-#picframe7 #pic7 {
+#presentation #rightcol #picframe7 #pic7 {
   position: absolute;
   top: 160px;
   right: 220px;
@@ -593,6 +534,100 @@ html {
   }
 }
 
+@media (max-width: 991px) {
+  #presentation #rightcol {
+    display: -ms-grid;
+    display: grid;
+    grid-template: 1fr;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    margin-top: 60px;
+    margin-bottom: -60px;
+    height: 110px;
+    padding: 0;
+  }
+  #presentation #rightcol #imgpart {
+    margin-left: 0;
+    position: relative;
+    height: 110px;
+    width: 110px;
+  }
+  #presentation #rightcol #imgpart .animationframe, #presentation #rightcol #imgpart .animationpics {
+    -webkit-transform: scale(30%) translateX(200%);
+            transform: scale(30%) translateX(200%);
+  }
+  #presentation #rightcol #imgpart #picframe5, #presentation #rightcol #imgpart #pic5, #presentation #rightcol #imgpart #picframe6, #presentation #rightcol #imgpart #pic6 {
+    -webkit-transform: scale(30%) translateX(-270%);
+            transform: scale(30%) translateX(-270%);
+  }
+  #presentation #rightcol #imgpart::after {
+    -webkit-transform: scale(30%) translateX(-130%);
+            transform: scale(30%) translateX(-130%);
+  }
+}
+
+@media (min-width: 960px) {
+  #presentation #hipart, #presentation #rightcol {
+    margin-top: 150px;
+  }
+}
+
+#presentation #imwill {
+  color: #00a166;
+  font-weight: bolder;
+  padding: 0;
+}
+
+#presentation #webdev {
+  color: #515151;
+  font-weight: lighter;
+  padding: 0;
+}
+
+#presentation .mb-5 {
+  display: inline-block;
+  /* --------- get in touch ------------------------------*/
+  /* -------- dl portfolio ------------------------------*/
+}
+
+#presentation .mb-5 #btn1 {
+  width: 220px;
+  height: 40px;
+  background-color: #a1003b;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  #presentation .mb-5 #btn1 {
+    width: 90vw;
+  }
+}
+
+#presentation .mb-5 #btn2 {
+  width: 220px;
+  height: 40px;
+  margin: 0 15px 0 0;
+  background-color: #fff;
+  border-radius: 25px;
+  border-color: #fff;
+  border: none;
+  color: #a1003b;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  #presentation .mb-5 #btn2 {
+    width: 90vw;
+  }
+}
+
+/* --------- semi ellipse pic------------------------------*/
 #ellipse {
   background-color: #00A166;
   border-radius: 50% / 100%;
@@ -632,6 +667,9 @@ html {
   color: black;
   width: 420px;
   height: 420px;
+  background: #020024;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(16, 160, 178, 0.4)), color-stop(20%, rgba(16, 160, 178, 0.4)), to(rgba(16, 160, 178, 0.4)));
+  background: linear-gradient(0deg, rgba(16, 160, 178, 0.4) 0%, rgba(16, 160, 178, 0.4) 20%, rgba(16, 160, 178, 0.4) 100%);
 }
 
 @media (max-width: 900px) {

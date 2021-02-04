@@ -1,0 +1,528 @@
+/* --------- PRESENTATION SECTION------------------------------*/
+
+/* --------- both columns------------------------------*/
+
+#presentation {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    min-height: 80vh;
+    text-align: left;
+
+    #skills {
+        position: absolute;
+        top: 350px;
+        left: 55px;
+        width: 300px;
+        height: 50px;
+        
+        transition: all .3s ease-in-out;
+    }
+
+    /* --------- RIGHT COLUMN------------------------------*/
+    #rightcol {
+        margin-top: 150px;
+
+
+        /* --------- all pics -----------------------------*/
+
+        // div with pics
+        #imgpart {
+            
+            position: relative;
+            padding: 0 20px 0 20px;
+            margin: auto;
+            height: 400px;
+            max-width: 400px;    
+            
+            // frame wherein there is pic
+            .animationframe {
+                text-align: center;
+            }
+
+            // actual pic
+            .animationpics {
+                
+                width: 100px;
+                height: auto;
+                border-radius: 25px;
+                
+            }
+
+        }
+
+        // oval 
+        #imgpart::after {
+            content: "";
+                position: absolute;
+                border-radius: 50%;
+                top: 65%;
+                left: 15%;
+                margin: auto;
+                width: 250px;
+                height: 70px;
+                
+                
+                background: rgba(0, 0, 0, 0.2);
+            
+        }
+
+
+        /* --------- html pic------------------------------*/
+
+        #picframe1 {
+            perspective: 800px;
+            
+
+            #pic1 {
+                // layout
+                position: absolute;
+                right: 70px;
+                top: 45px;
+                // style
+                transform-origin: center;
+                transform: rotateY(55deg);
+                
+
+                //animation
+                animation-name: levitate1;
+                animation-duration: 4s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+                
+                
+            }
+
+            @keyframes levitate1 {
+                from {
+                    transform: rotateY(55deg) translateY(5%);
+                }
+
+                25%{
+                    transform:  rotateY(53deg)translateY(7%);
+                }
+
+                50%{
+                    transform:  rotateY(51deg)translateY(10%);
+                }
+
+                75%{
+                    transform:  rotateY(53deg)translateY(7%);
+                }
+
+                
+
+                100%{
+                    transform:  rotateY(55deg) translateY(5%);
+                }
+            }
+
+        }
+
+        /* --------- css pic------------------------------*/
+
+
+        #picframe2 {
+            perspective: 800px;
+            
+
+            #pic2 {
+                //layout
+                position: absolute;
+                top: 120px;
+                right: 30px;
+                //style
+                
+                transform-origin: center;
+                transform: rotateY(-80deg);
+                
+
+                //animation
+                animation-name: levitate2;
+                animation-duration: 4s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+                
+            }
+
+            @keyframes levitate2 {
+                from {
+                    transform: rotateY(35deg) translateY(-5%);
+                }
+
+                50%{
+                    transform:  rotateY(60deg)translateY(5%);
+                }
+
+                100%{
+                    transform:  rotateY(35deg) translateY(-5%);
+                }
+            }
+
+        }
+
+        /* --------- js pic------------------------------*/
+
+
+        #picframe3 {
+            perspective: 1100px;
+            
+            
+            #pic3 {
+                //layout
+                position: absolute;
+                top: 100px;
+                right: 140px;
+                
+                //style
+                transform-origin: center;
+                transform: rotateY(-30deg);
+                
+
+                //animation
+                animation-name: levitate3;
+                animation-duration: 4s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes levitate3 {
+                from {
+                    transform: rotateY(-30deg) translateY(-7%);
+                }
+
+                
+
+                50%{
+                    transform: rotateY(-26deg) translateY(2%);
+                }
+
+                
+
+                100%{
+                    transform: rotateY(-30deg) translateY(-7%);
+                }
+            }
+        }
+
+
+        /* --------- sass pic------------------------------*/
+
+
+        #picframe4 {
+            perspective: 1100px;
+            
+            
+            #pic4 {
+                //layout
+                position: absolute;
+                top: 170px;
+                right: 90px;
+                
+                //style
+                transform-origin: center;
+                transform: rotateY(-30deg);
+                
+
+                //animation
+                animation-name: levitate4;
+                animation-duration: 4s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes levitate4 {
+                from {
+                    transform: rotateY(-40deg) translateY(7%);
+                }
+
+                
+
+                50%{
+                    transform: rotateY(-24deg) translateY(-2%);
+                }
+
+                
+
+                100%{
+                    transform: rotateY(-40deg) translateY(7%);
+                }
+            }
+        }
+
+        /* --------- bootstrap pic------------------------------*/
+
+
+        #picframe5 {
+            perspective: 1100px;
+            
+            
+            #pic5 {
+                //layout
+                position: absolute;
+                top: 0px;
+                left: 70px;
+                
+                //style
+                transform-origin: center;
+                transform: rotateY(-30deg);
+                
+
+                //animation
+                animation-name: levitate5;
+                animation-duration: 4s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes levitate5 {
+                from {
+                    transform: rotateY(-40deg) translateY(7%);
+                }
+
+                
+
+                50%{
+                    transform: rotateY(-24deg) translateY(-2%);
+                }
+
+                
+
+                100%{
+                    transform: rotateY(-40deg) translateY(7%);
+                }
+            }
+        }
+
+        /* --------- react pic------------------------------*/
+
+
+        #picframe6 {
+            perspective: 1100px;
+            
+            
+            #pic6 {
+                //layout
+                position: absolute;
+                top: 70px;
+                left: 20px;
+                
+                //style
+                transform-origin: center;
+                transform: rotateY(-30deg);
+                
+
+                //animation
+                animation-name: levitate6;
+                animation-duration: 4s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes levitate6 {
+                from {
+                    transform: rotateY(-40deg) translateY(7%);
+                }
+
+                
+
+                50%{
+                    transform: rotateY(-24deg) translateY(-2%);
+                }
+
+                
+
+                100%{
+                    transform: rotateY(-40deg) translateY(7%);
+                }
+            }
+        }
+
+        /* --------- git pic------------------------------*/
+
+
+        #picframe7 {
+            perspective: 1100px;
+            
+            
+            #pic7 {
+                //layout
+                position: absolute;
+                top: 160px;
+                right: 220px;
+                
+                //style
+                transform-origin: center;
+                transform: rotateY(-30deg);
+                
+
+                //animation
+                animation-name: levitate7;
+                animation-duration: 4s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+            }
+
+            @keyframes levitate7 {
+                from {
+                    transform: rotateY(-40deg) translateY(-8%);
+                }
+
+                
+
+                
+
+                50%{
+                    transform: rotateY(-30deg) translateY(0%);
+                }
+
+                
+            
+
+                
+
+                100%{
+                    transform: rotateY(-40deg) translateY(-8%);
+                }
+            }
+        }
+    }
+
+    // trying to override the #imgpart div to put in in top right with small size on phone devices
+    @media (max-width: 991px) {
+        
+        #rightcol {
+            //layout
+            display: grid;
+            grid-template: 1fr;
+            justify-content: right;
+            margin-top: 60px;
+            margin-bottom: -60px;
+            //border: solid blue;
+            height: 110px;
+            padding: 0;
+            
+
+            #imgpart {
+                margin-left: 0;
+                
+                position: relative;
+                height: 110px;
+                width: 110px;
+                //border: solid red;
+
+                .animationframe, .animationpics, {
+                    
+                    transform: scale(30%) translateX(200%);   
+                }
+
+                #picframe5, #pic5, #picframe6, #pic6 {
+                    transform: scale(30%) translateX(-270%)
+                }
+
+            }
+
+            #imgpart::after {
+                transform: scale(30%) translateX(-130%);
+            }
+        }
+    }
+
+
+
+    #hipart, #rightcol {
+        
+        @media (min-width: 960px) {
+            margin-top: 150px;
+            
+        }
+    }
+
+/* --------- left column------------------------------*/
+
+    #imwill {
+        color: #00a166;
+        font-weight: bolder;
+        padding: 0;
+    }
+
+    #webdev {
+        color: #515151;
+        font-weight: lighter;
+        padding: 0;
+        
+    }
+
+/* --------- part with buttons ------------------------------*/
+
+
+    .mb-5 {
+
+        display: inline-block;
+
+
+        /* --------- get in touch ------------------------------*/
+    
+        #btn1 {
+            // layout
+            width: 220px;
+            height: 40px;
+            //style
+            background-color: #a1003b;
+            border-radius: 25px;
+            border: none;
+            // font
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;    
+            @media (max-width: 600px) {
+                width: 90vw;
+            }
+        }
+        
+        /* -------- dl portfolio ------------------------------*/
+
+        #btn2 {
+            //layout
+            width: 220px;
+            height: 40px;
+            @media (max-width: 600px) {
+                width: 90vw;
+            }
+            margin: 0 15px 0 0;
+            //style
+            background-color: #fff;
+            // border
+            border-radius: 25px;
+            border-color: #fff;
+            border: none;
+            //font
+            color: #a1003b;
+            font-size: 1.2rem;
+            font-weight: bold;
+            
+        }
+    
+        
+    }
+
+}
+
+
+/* --------- semi ellipse pic------------------------------*/
+
+#ellipse {
+    
+    background-color: #00A166;
+    border-radius: 50% / 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100%;
+    height: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    @media (max-width: 600px) {
+        margin-top: 50px;
+    }
+    
+}
+

@@ -1,0 +1,92 @@
+/* --------- NAVBAR SECTION------------------------------*/
+
+#nav-bar {
+    background-color: white;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    box-shadow: rgba(48, 48, 48, 0.1) 0px 1px;
+    
+    .navbar-toggler{
+        border: none;
+        border-radius: 0%;
+        
+
+        .navbar-toggler-icon{
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 161, 102, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+    }
+
+    .navbar-toggler:hover{
+        border: none;
+        border-radius: 0%;
+        color: #00a166
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+
+
+    }
+}
+
+
+.divlink {
+    position: relative;
+    width: 80px;
+    text-align: center;
+    font-size: 1.1rem;
+    margin: auto;
+    
+    .nav-link {
+        overflow: hidden;
+        position: relative;
+
+        
+        @media (min-width: 575px) {
+            padding: 0 15px 0 15px;
+            
+        }
+
+        z-index: 2;
+        
+        
+    }
+    
+    .nav-link::before {
+        //layout
+        content: "";
+        position: absolute;
+        width: 150%;
+        height: 0%;
+        bottom: 0px;
+        left: -15px;
+    
+        //style
+        background-color: #00a166;
+        transition: all ease-in-out .25s;
+        
+        z-index: -1;
+        
+    
+    }
+    
+    .nav-link:hover::before {
+        //layout
+        
+        @media (min-width: 575px) {
+            height: 50%;
+            
+        }
+        
+        
+    }
+
+    
+}
+
+
+
+#will {
+    font-family: 'Satisfy', cursive;
+}
