@@ -928,8 +928,8 @@ a {
 }
 
 #contact #contact-form-row .contact-form .form-control:focus {
-  -webkit-transform: scale(120%, 120%);
-          transform: scale(120%, 120%);
+  -webkit-transform: scale3d(120%, 120%, 120%);
+          transform: scale3d(120%, 120%, 120%);
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-transition: all .2s ease-in-out;
