@@ -3,7 +3,7 @@
 //-------- whole div ----------------------------------
 
 #projects {
-    background-color: #00A166;
+    background-color: $first-color;
     padding-bottom: 150px;
 }
 
@@ -13,7 +13,7 @@
     text-align: center;
 
     .display-1 {
-    color: white;
+    color: $titleoncolor;
     font-weight: bolder;
     }
 
@@ -264,7 +264,7 @@
             
             font-size: 1.1rem;
             background-color: rgba(0,0,0,0);
-            border: solid #00A166 thin;
+            border: solid $first-color thin;
             color: silver;
         }
 

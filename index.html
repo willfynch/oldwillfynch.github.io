@@ -15,12 +15,13 @@
     <link rel="stylesheet" href="styles/style.css">
     <!-- fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 
-    <script src="https://kit.fontawesome.com/b0c30cf22d.js" crossorigin="anonymous"></script>
-</head>
+    
+  </head>
 <body>
 
 
@@ -28,11 +29,11 @@
 
         <section id="nav-bar">
             
-            <nav class="navbar navbar-light navbar-expand-sm " role="navigation">
+            <nav class="navbar navbar-expand-sm " role="navigation">
                 <div class="container-fluid" id="navcontainer">
 
                   <!------------------logo --------------->
-                    <a id="will" class="navbar-brand text-success" href="#">William Finzy</a>
+                    <a id="will" class="navbar-brand text" href="#">William Finzy</a>
                     
                     <!------------------toggler --------------->
                     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,97 +41,165 @@
                     </button>  
 
                     <!------------------navlinks --------------->
-                    <div class="collapse navbar-collapse"  id="navbarSupportedContent" > <!--data-bs-target=".navbar-collapse"-->
+                    <div class="collapse navbar-collapse"  id="navbarSupportedContent" > 
                         <div class="navbar-nav ms-auto" >       
-                            <div class="divlink" ><a id="testlink1"   class="nav-link active js-scroll-trigger" href="#">About</a></div>
-                            <div class="divlink"><a id="testlink2" class="nav-link active js-scroll-trigger" href="#ellipse">Work</a></div>
-                            <div class="divlink"><a id="testlink3"   class="nav-link active js-scroll-trigger" href="#contact">Contact</a></div>
+                            <div class="divlink" ><a id="testlink1"   class="nav-link active js-scroll-trigger" href="#">Home</a></div>
+                            <div class="divlink"><a id="testlink2" class="nav-link active js-scroll-trigger" href="#about">About</a></div>
+                            <div class="divlink"><a id="testlink3" class="nav-link active js-scroll-trigger" href="#portfolio">Portfolio</a></div>
+                            <div class="divlink"><a id="testlink4"   class="nav-link active js-scroll-trigger" href="#contact">Contact</a></div>
                         </div>
                     </div>          
                 </div>
             </nav>
         </section>
         
-  <!------------- presentation section ------------------->
+  <!------------- landing section ------------------->
 
-        
-        <section  id="presentation">
-          <div class="container">
+        <!------------  Creating the background----
+          https://c4.wallpaperflare.com/wallpaper/578/505/114/cubes-abstract-wallpaper-preview.jpg------ -->
+
+        <section  id="landing" class="bg-image"
+          style=
+          "background-image : url('/pics/cubes.jpg'); 
+          background-size: cover">
+          
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+          
+            <div class="animation-area">
+              <ul class="box-area">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+
+            <div class="container">
+
 
             
-
-            <div class="row flex-row-reverse">
-
-              <!-- COLUMN RIGHT-->
-              <div class="col-lg-6" id="rightcol">
+              <!-------unique row-------------->
+              <div class="row d-flex">
+  
                 
-                
-                <div id="imgpart">
+                <!-------unique column-------------->
+                <div class="col-lg" id="hipart">
+                  <p id="imwill" class="display-1 mt-5 mb-0 pb-0">Hi, I'm William.</p>
+                  <p id="webdev" class="display-6 mb-0 pb-0">I build websites.</p>
                   
-                  <figure id="picframe1" class="animationframe">
-                    <img id="pic1" class="animationpics" src="./pics/htmlicon.png" alt="html">
-                  </figure>
-  
-                  <figure id="picframe2" class="animationframe">
-                    <img id="pic2" class="animationpics" src="./pics/cssicon.png" alt="css">
-                  </figure>
-  
-                  <figure id="picframe3" class="animationframe">
-                    <img id="pic3" class="animationpics" src="./pics/jsicon.png" alt="JavaScript">
-                  </figure>
-
-                  <figure id="picframe4" class="animationframe">
-                    <img id="pic4" class="animationpics" src="./pics/sassicon.png" alt="Sass">
-                  </figure>
-
-                  <figure id="picframe5" class="animationframe">
-                    <img id="pic5" class="animationpics" src="./pics/bootstrapicon.png" alt="Bootstrap">
-                  </figure>
-
-                  <figure id="picframe6" class="animationframe">
-                    <img id="pic6" class="animationpics" src="./pics/reacticon.png" alt="React">
-                  </figure>
-
-                  <figure id="picframe7" class="animationframe">
-                    <img id="pic7" class="animationpics" src="./pics/giticon.png" alt="Git">
-                  </figure>
+                  
+                    <div class="mb-5">
+                      <button id="btn1">
+                        Get in touch <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                      </button>
+                      
+                    </div>
                 </div>
-              </div>
-
-              <div class="col-lg-6 " id="hipart">
-                <p id="imwill" class="display-1 mt-5 mb-0 pb-0">Hi. I'm William.</p>
-                <p id="webdev" class="display-6 mb-0 pb-0">A Front-End Developer.</p>
                 
-                <p id="hookmessage">You have hard times finding customers ? Troubles building a website
-                  that will finally attract them ? Maybe you just lack time. 
-                  <strong>Maybe you need someone to 
-                    handle this website part for you.</strong> 
-                </p>
-                  <div class="mb-5">
-                    <button id="btn1">
-                      Let's get in touch !
-                    </button>
-                    <button id="btn2">
-                    Download my portfolio
-                    </button>
-                  </div>
               </div>
               
             </div>
-            
           </div>
+          
         </section>
 
-        <section>
-          <div id="ellipse">
-            
-          </div>
-        </section>
         
+        <!------------- about section ------------------->
+        <div class="spacingdiv" id="about"></div>
+
+        <section id="aboutsection">
+
+          <div id="aboutdiv"><p class="display-1 d-flex justify-content-center" id="textabout">About</p></div>
+          <div class="spacingdiv"></div>
+          <div id="whoiamdiv"><p class="display-4 d-flex justify-content-center" id="textwhoiam">Who I am</p></div>
+          <div class="spacingdiv"></div>
+          
+          <div class="container-fluid">
+            <!------------- infos section ------------------->
+            <div class="row" id="infos">
+
+              <div class="col-sm text-center" id="willpiccol">
+                <div id="willpicdiv"><img class="img-fluid"  id="willpic" src="./pics/avatar.png" alt="mypic"></div>
+                
+                
+
+              </div>
+
+              
+              <div class="col-sm text-center" id="infotextcol">
+                <p>My name is William. I am a Front-End Developer living
+                  in France. I do some freelancing so feel 
+                  free to <a href="#contact">contact</a> me !
+                </p>
+              </div>
+
+            </div>
+
+
+            <div class="spacingdiv" id="beforewhatido"></div>
+
+
+            <!------------- offer section ------------------->
+
+
+            <div id="whatidodiv"><p class="display-4 d-flex justify-content-center" id="textwhatido">What I do</p></div>
+            
+
+            <div class="spacingdiv"></div>
+
+            <div class="row" id="whatido1">
+              <div class="col text-center">
+                <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
+                <p>Lorem ipsum dolor sit, amet 
+                  consectetur adipisicing elit. 
+                  Esse, eligendi!</p>
+              </div>
+              <div class="col text-center">
+                <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
+                <p>Lorem ipsum dolor sit, amet 
+                  consectetur adipisicing elit. 
+                  Esse, eligendi!</p>
+              </div>
+            </div>
+
+            <div class="row" id="whatido2">
+              <div class="col text-center">
+                <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
+                <p>Lorem ipsum dolor sit, amet 
+                  consectetur adipisicing elit. 
+                  Esse, eligendi!</p>
+              </div>
+              <div class="col text-center">
+                <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
+                <p>Lorem ipsum dolor sit, amet 
+                  consectetur adipisicing elit. 
+                  Esse, eligendi!</p>
+              </div>           
+            </div>
+            <div class="spacingdiv"></div>
+            <p class="d-flex justify-content-center">Want to work with me ?</p>
+
+          </div>
+          <div class="spacingdiv"></div>
+
+
+        </section>
+
+
+
         <!------------- projects section ------------------->
         
-        <section id="projects">
+        <section id="portfolio">
+
+          <!------------- container for projects ------------------->
           <div class="container mx-auto">
+
+
+
+
+            <!------------- text part before portfolio ------------------->
             <div id="textbeforeprojects">
               <p  class="display-1 d-block mx-auto mb-4 pb-0" id="titleprojects">
                 Projects
@@ -139,17 +208,17 @@
                 Here are the projects I've been working on lately.
               </p>
             </div>
+
+
+
             
-            
+            <!------------- text part before portfolio ------------------->
             <div class="row g-0 justify-content-center">
               
               <div class="col-auto">
-                
                   <div class="card">
                     <img src="./pics/question.png" class="card-img-top" alt="...">
-                    
                     <div class="card-img-overlay card-inverse"></div>
-
                     <div class="card-body">
                       <h5 class="card-title">HelloWatch</h5>
                       <h6 class="card-subtitle mb-2">Website</h6>
@@ -158,10 +227,7 @@
                       </p>
                       <a href="#" class="btn btn-primary ">See project</a>
                     </div>
-
                   </div>
-          
-                
               </div>
 
 
@@ -178,6 +244,9 @@
                   </div>
                 </div>
               </div>
+
+
+
               <div class="col-auto">
                 <div class="card">
                   <img src="./pics/charcounter.png" class="card-img-top" alt="...">
@@ -192,6 +261,7 @@
               </div>
             
               
+
               <div class="col-auto">
                 <div class="card">
                   <img src="./pics/charcounter.png" class="card-img-top" alt="...">
@@ -204,6 +274,9 @@
                   </div>
                 </div>
               </div>
+
+
+
               <div class="col-auto">
                 <div class="card">
                   <img src="./pics/form.png" class="card-img-top" alt="...">
@@ -216,6 +289,9 @@
                   </div>
                 </div>
               </div>
+
+
+
               <div class="col-auto">
                 <div class="card">
                   <img src="./pics/project1.png" class="card-img-top" alt="...">
@@ -235,12 +311,6 @@
             
         
           
-        
-        <!--<section>
-          <div id="revellipse">
-            
-          </div>
-        </section>-->
 
         <!------------- form section ------------------->  
          
@@ -318,6 +388,10 @@
         <!------ Anime JS-------->
         <script src="anime.min.js"></script>
 
+        <!--------  Font Awesome ------->
+
+        <script src="https://kit.fontawesome.com/b0c30cf22d.js" crossorigin="anonymous"></script>
+
         <!------ JQuery -------->
         <script
           src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -325,21 +399,21 @@
           crossorigin="anonymous">
         </script>
 
-        <!---------------- Others -------------->
+        <!---------------- collapse navbar after click -------------->
       <script >
-      
-        
-       
-      // collapse navbar after click
-      $(".js-scroll-trigger").click(function(){
-        $(".navbar-collapse").collapse("hide");
-      });
+        // collapse navbar after click
+        $(".js-scroll-trigger").click(function(){
+          $(".navbar-collapse").collapse("hide");
+        });
+      </script>
 
-      
-    </script>
     
+    <!---------------- Bootstrap -------------->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script src="animations.js" ></script>
     
+    <!---------------- imports -------------->
+    <script src="animations.js" ></script>
+    <script src="navchange.js" ></script>
+   
 </body>
 </html>

@@ -1,316 +1,43 @@
+// animations of titles
 
-// global variables
+window.addEventListener("scroll", function(){
 
+    // store nav in var
+	let about = document.getElementById("textabout");
 
-// get position function 
-// helper function to get an element's exact position
-function getPosition(el) {
-    var xPosition = 0;
-    var yPosition = 0;
-   
-    while (el) {
-      if (el.tagName == "BODY") {
-        // deal with browser quirks with body/window/document and page scroll
-        var xScrollPos = el.scrollLeft || document.documentElement.scrollLeft;
-        var yScrollPos = el.scrollTop || document.documentElement.scrollTop;
-   
-        xPosition += (el.offsetLeft - xScrollPos + el.clientLeft);
-        yPosition += (el.offsetTop - yScrollPos + el.clientTop);
-      } else {
-        xPosition += (el.offsetLeft - el.scrollLeft + el.clientLeft);
-        yPosition += (el.offsetTop - el.scrollTop + el.clientTop);
-      }
-   
-      el = el.offsetParent;
-    }
-    return {
-      x: xPosition,
-      y: yPosition
-    };
-  }
+    // add sticky class if condition scroll Y > 0 
+	about.classList.toggle("underlined", window.scrollY > 280);
+})
 
 
-  // ANIMATIONS 
 
-// ------------ FOR PIC 1 ---------------------------
+// SUBTITLES ANIMATION
 
-function picsAnimation1() {
-  
+// Who I Am
 
-    // move pics to destination
-     
-        anime({
-            targets: pic1,
-            width: "100%",
-            height: "100%",
-            rotateY: 200,
-            scale: 2,
-            rotate: '1turn',
-            duration: 1500
-        })    
-}
+//switch to make it work only once
+//let mySwitch = false;
 
-function picsAnimationBack1() {
+window.addEventListener("scroll", function(){
+
+    // store nav in var
+	let whoiam = document.getElementById("textwhoiam");
+
     
-    
-    // move pics back
-    
-        $("#skills").text("");
-        
-        anime({
-            targets: pic1,
-            width: "80%",
-            height: "80%",
-            scale: 2,
-            rotate: '1turn',
-            duration: 1500
-        })
-    
-}
 
-//----------------- FOR PIC 2----------------
-
-function picsAnimation2() {
-    
-    // move pics to destination
-     
-        anime({
-            targets: pic2,
-            width: "100%",
-            height: "100%",
-            
-            scale: {
-                delay: 800,
-                value: 1.5
-            },
-            duration: 1500
-        })    
-}
-
-function picsAnimationBack2() {
-    
-    // move pics to destination
-        
-        anime({
-            targets: pic2,
-            width: "80%",
-            height: "80%",
-            scale: {
-                delay: 800,
-                value: 3
-            },
-            duration: 1500
-        })
-    
-}
+    // add sticky class if condition scroll Y > 0 
+	whoiam.classList.toggle("animated", window.scrollY > 280);
+    //mySwitch = true;
+})
 
 
-//----------------- FOR PIC 3----------------
+// What I Do
 
-function picsAnimation3() {
-    
-    // move pics to destination
-     
-        anime({
-            targets: pic3,
-            width: "100%",
-            height: "100%",
-            scale: {
-                delay: 800,
-                value: 1.5
-            },
-            duration: 1500
-        })    
-}
+window.addEventListener("scroll", function(){
 
-function picsAnimationBack3() {
-    
-    // move pics to destination
-        
-        anime({
-            targets: pic3,
-            width: "80%",
-            height: "80%",
-            scale: {
-                delay: 800,
-                value: 3
-            },
-            duration: 1500
-        })
-    
-}
+    // store nav in var
+	let whatido = document.getElementById("textwhatido");
 
-
-//----------------- FOR PIC 4----------------
-
-function picsAnimation4() {
-    
-    // move pics to destination
-     
-        anime({
-            targets: pic4,
-            width: "100%",
-            height: "100%",
-            scale: {
-                delay: 800,
-                value: 1.5
-            },
-            duration: 1500
-        })    
-}
-
-function picsAnimationBack4() {
-    
-    // move pics to destination
-        
-        anime({
-            targets: pic4,
-            width: "80%",
-            height: "80%",
-            scale: {
-                delay: 800,
-                value: 3
-            },
-            duration: 1500
-        })
-    
-}
-
-//----------------- FOR PIC 5----------------
-
-function picsAnimation5() {
-    
-    // move pics to destination
-     
-        anime({
-            targets: pic5,
-            width: "100%",
-            height: "100%",
-            scale: {
-                delay: 800,
-                value: 1.5
-            },
-            duration: 1500
-        })    
-}
-
-function picsAnimationBack5() {
-    
-    // move pics to destination
-        
-        anime({
-            targets: pic5,
-            width: "80%",
-            height: "80%",
-            scale: {
-                delay: 800,
-                value: 3
-            },
-            duration: 1500
-        })
-    
-}
-
-//----------------- FOR PIC 6----------------
-
-function picsAnimation6() {
-    
-    // move pics to destination
-     
-        anime({
-            targets: pic6,
-            width: "100%",
-            height: "100%",
-            scale: {
-                delay: 800,
-                value: 1.5
-            },
-            duration: 1500
-        })    
-}
-
-function picsAnimationBack6() {
-    
-    // move pics to destination
-        
-        anime({
-            targets: pic6,
-            width: "80%",
-            height: "80%",
-            scale: {
-                delay: 800,
-                value: 3
-            },
-            duration: 1500
-        })
-    
-}
-
-
-//----------------- FOR PIC 7----------------
-
-function picsAnimation7() {
-    
-    // move pics to destination
-     
-        anime({
-            targets: pic7,
-            width: "100%",
-            height: "100%",
-            scale: {
-                delay: 800,
-                value: 1.5
-            },
-            duration: 1500
-        })    
-}
-
-function picsAnimationBack7() {
-    
-    // move pics to destination
-        
-        anime({
-            targets: pic7,
-            width: "80%",
-            height: "80%",
-            scale: {
-                delay: 800,
-                value: 3
-            },
-            duration: 1500
-        })
-    
-}
-
-
-// variables where we store elements
-
-let pic1 = document.getElementById("pic1");
-let pic2 = document.getElementById("pic2");
-let pic3 = document.getElementById("pic3");
-let pic4 = document.getElementById("pic4");
-let pic5 = document.getElementById("pic5");
-let pic6 = document.getElementById("pic6");
-let pic7 = document.getElementById("pic7");
-
-
-// animation when hover
-pic1.addEventListener("mouseover", picsAnimation1);
-pic2.addEventListener("mouseover", picsAnimation2);
-pic3.addEventListener("mouseover", picsAnimation3);
-pic4.addEventListener("mouseover", picsAnimation4);
-pic5.addEventListener("mouseover", picsAnimation5);
-pic6.addEventListener("mouseover", picsAnimation6);
-pic7.addEventListener("mouseover", picsAnimation7);
-
-
-// when mouse is removed then move pics back to origin
-pic1.addEventListener("mouseout", picsAnimationBack1);
-pic2.addEventListener("mouseout", picsAnimationBack2);
-pic3.addEventListener("mouseout", picsAnimationBack3);
-pic4.addEventListener("mouseout", picsAnimationBack4);
-pic5.addEventListener("mouseout", picsAnimationBack5);
-pic6.addEventListener("mouseout", picsAnimationBack6);
-pic7.addEventListener("mouseout", picsAnimationBack7);
-
-//arrow shape in mobile layout 
+    // add sticky class if condition scroll Y > 0 
+	whatido.classList.toggle("animated", window.scrollY > 750);
+})

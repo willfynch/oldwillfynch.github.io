@@ -1,5 +1,7 @@
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-size: 16px;
 }
 
 * {
@@ -9,11 +11,44 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+/*
+colors for test
+#041425
+#163e66
+#0c2b4b
+#255a8e
+#5694d0
+#040406
+#1876d4
+
+
+*/
+
+$first-color : #163e66;
+$second-color: #5694d0;
+$third-color: #a5caee;
+
+$background-color1 : white ;
+$background-color2 : rgba(198, 228, 255, 0.2);
+
+$titleonbackground : rgb(236, 236, 236);
+$titleoncolor : #163e66;
+
+$subtitle-color : #515151;
+$socialiconscolor : black;
+$socialiconscolorhover: white;
+
+.spacingdiv {
+    height: 10vh;
+}
+
 @import "./navbar";
 
+@import "./squares";
 
-@import "./presentation";
+@import "./landing";
 
+@import "./about";
 
 @import "./projects";
 

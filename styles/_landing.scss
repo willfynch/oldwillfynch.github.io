@@ -1,0 +1,153 @@
+
+
+// 
+#landing {
+    
+    background-color: $background-color1;
+    color: white;
+    height: 100vh;
+    text-align: left;
+
+    .mask {
+        height: 100vh;
+    }
+    
+    #hipart {
+        //border: solid blue;
+        z-index: 999;
+        text-align: center;
+        padding: 25vh 150px;
+        @media screen and (orientation: portrait) {
+            margin-top: 150px;
+            margin-top: 50%;
+            padding: 0;
+        }
+        @media screen and (orientation: landscape) {
+            
+            padding: 25vh 50px;
+        }
+
+
+        #imwill {
+            color: $titleonbackground;
+            font-weight: normal;
+            padding: 0;
+            
+        }
+    
+        #webdev {
+            color: $titleonbackground;
+            font-weight: 100;
+            
+            padding: 0;
+            
+        }
+    }
+
+    
+
+ 
+
+
+/* --------- part with buttons ------------------------------*/
+
+
+    .mb-5 {
+
+        display: inline-block;
+        margin: 25px 0 0 0;
+
+        /* --------- text ------------------------------*/
+
+        
+
+        /* --------- get in touch ------------------------------*/
+    
+        #btn1 {
+            // layout
+            width: 140px;
+            height: 40px;
+            //style
+            background-color: rgba(0,0,0,0);
+            border-radius: 25px;
+            border: solid $titleonbackground;
+            transition: all ease-in-out .2s;
+            // font
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 400; 
+            
+
+            
+            // responsiveness
+
+            //adjusting width on small screens
+            @media (max-width: 600px) {
+                width: 40vw;
+            }
+
+            // adjusting margin 
+            margin-top: 90%;
+            @media screen and (orientation: portrait) {
+                margin-top: 70%;
+            }
+            @media screen and (orientation: landscape) {
+            
+                margin-top: 10%;
+            }
+        }
+        
+        #btn1:hover {
+            color: $first-color;
+            background-color: $background-color1;
+
+            .fa {
+                transition: .3s;
+                transform: rotateZ(90deg);
+            }
+
+            
+        }
+
+        #btn1:focus {
+            box-shadow: none;
+            
+        }
+
+        
+
+        /* -------- dl portfolio ------------------------------*/
+
+        #btn2 {
+            //responsiveness
+            @media screen and (orientation: portrait) {
+                display: none;
+                
+            }
+            //layout
+            width: 220px;
+            height: 40px;
+            @media (max-width: 600px) {
+                width: 90vw;
+            }
+            margin: 0 15px 0 0;
+            //style
+            background-color: #fff;
+            // border
+            border-radius: 25px;
+            border-color: #fff;
+            border: none;
+            //font
+            color: $second-color;
+            font-size: 1.2rem;
+            font-weight: bold;
+            
+        }
+    
+        
+    }
+
+}
+
+
+

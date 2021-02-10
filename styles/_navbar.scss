@@ -1,26 +1,217 @@
 /* --------- NAVBAR SECTION------------------------------*/
 
+
+// ON ALL MODES
+
+// section 
+#nav-bar{
+    transition: 1s;
+    position: fixed;
+    z-index: 1999;
+    width: 100%;
+    box-shadow: rgba(48, 48, 48, 0.1) 0px 1px 5px;
+
+    nav {
+        #navcontainer {
+            
+            // logo
+            #will {
+                font-family: 'Satisfy', cursive;
+            }
+
+
+            //toggler
+
+            button {
+            }
+            button:focus {
+                box-shadow: none;
+            }
+
+
+            // nav links
+            .navbar-collapse {
+                .navbar-nav {
+                    .divlink {
+                        
+                        position: relative;
+                        overflow: hidden;
+                        .nav-link {
+                            text-align: center;
+                            z-index: 2000;
+                            @media (min-width: 575px) {
+                                padding: 0 25px;
+                                
+                            }
+                        }
+
+                        @media screen and (orientation: landscape) and (min-width: 600px){
+                            .nav-link::before {
+                                position: absolute;
+                                left:0;
+                                bottom:0;
+                                content: "";
+                                width: 150%;
+                                height: 0%;
+                                
+                                z-index: 1;
+                                transition: .6s;
+                            }
+
+                            .nav-link:hover::before {
+                                
+                                height: 100%;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+// on landing page mode 
+
+// section 
+#nav-bar{
+    height: 70px;
+    padding: 20px;
+    nav {
+        #navcontainer {
+            
+            // logo
+            #will {
+                color: white;
+            }
+
+            //toggler
+
+            button {
+                
+                .navbar-toggler-icon {
+                    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+                }
+            }
+
+            // nav links
+            .navbar-collapse {
+                .navbar-nav {
+                    .divlink {
+                        .nav-link {
+                            color: white;
+                            
+                        }
+                        @media screen and (orientation: landscape) and (min-width: 600px){
+                            .nav-link::before {
+                                
+                                background-color: rgba(255,255,255,.2);
+                                
+                            }
+
+                            
+                        }
+                        
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+// on sticky mode with white background
+
+// section 
+#nav-bar.sticky {
+    height: 50px;
+    padding: 0px;
+    background-color: $background-color1;
+    nav {
+        #navcontainer {
+            background-color: $background-color1;
+            // logo
+            #will {
+                color: $first-color;
+            }
+
+            //toggler
+            button {
+                .navbar-toggler-icon {
+
+                    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(22, 62, 102, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+                }
+            }
+            // nav links
+            .navbar-collapse {
+                
+                .navbar-nav {
+                    
+                    .divlink {
+                        .nav-link {
+                            color: $first-color;
+                        }
+
+                        @media screen and (orientation: landscape) and (min-width: 600px){
+                            .nav-link::before {
+                                
+                                background-color: rgba(26,62,102,.2);
+                                
+                            }
+
+                            .nav-link:hover::before {
+                                
+                                height: 100%;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+/*
 #nav-bar {
-    background-color: white;
+    background-color: none;//$background-color1;
+    
     position: fixed;
     z-index: 999;
     width: 100%;
-    box-shadow: rgba(48, 48, 48, 0.1) 0px 1px;
+    box-shadow: rgba(48, 48, 48, 0.1) 0px 1px 5px;
     
+    
+    
+    
+
     .navbar-toggler{
         border: none;
         border-radius: 0%;
         
 
         .navbar-toggler-icon{
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 161, 102, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
         }
     }
-
+    
     .navbar-toggler:hover{
         border: none;
         border-radius: 0%;
-        color: #00a166
+        color: $titleonbackground;
     }
 
     .navbar-toggler:focus {
@@ -41,7 +232,7 @@
     .nav-link {
         overflow: hidden;
         position: relative;
-
+       
         
         @media (min-width: 575px) {
             padding: 0 15px 0 15px;
@@ -63,7 +254,7 @@
         left: -15px;
     
         //style
-        background-color: #00a166;
+        background-color: $background-color1;
         transition: all ease-in-out .25s;
         
         z-index: -1;
@@ -75,7 +266,7 @@
         //layout
         
         @media (min-width: 575px) {
-            height: 50%;
+            height: 15%;
             
         }
         
@@ -88,5 +279,27 @@
 
 
 #will {
+    color: $titleonbackground;
     font-family: 'Satisfy', cursive;
 }
+
+
+// when nav is in sticky mode 
+
+nav.sticky {
+    background-color: $background-color1;
+    height: ;
+    nav.sticky.nav-link {
+        color: $first-color;
+        
+    }
+
+    #will {
+        color: $first-color;
+        
+    }
+    
+    
+} 
+
+*/

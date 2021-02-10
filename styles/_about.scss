@@ -1,0 +1,214 @@
+    
+    // self closing div for spacing
+    #about {
+        background-color: $background-color2;
+        
+    }
+
+    //section
+    #aboutsection {
+        min-height: 100vh;
+        background-color: $background-color2;
+
+        
+        
+        
+        #aboutdiv {
+            position: relative;
+            #textabout {
+                font-weight: normal;
+                color: $first-color;
+            }
+            .underlined::after {
+                content: "";
+                position: absolute;
+                top: 95%;
+                height: 5px;
+                width: 90px;
+                background-color:$first-color;
+                animation-name: tracing;
+                animation-duration: .5s;
+            }
+            @keyframes tracing {
+                from {width: 0px}
+                to {width: 90px;
+                }
+            }
+        }
+        
+
+
+        #whoiamdiv {
+            #textwhoiam {
+                //layout
+                position: relative;
+                top: 0%;
+                left: -500%;
+                padding: 25px;
+
+                //style
+                color: $first-color;
+                
+    
+            }
+    
+            .animated {
+                animation-name: appearing;
+                animation-duration: .5s;
+                animation-delay: .2s;
+                animation-fill-mode: forwards;
+            }
+
+            @keyframes appearing {
+                from {left: -500%}
+                90% {
+                    transform: skew(30deg)
+                }
+                to {left: 0%;
+                    transform: skew(0deg);}
+            }
+        }
+        
+
+        #infos {
+            #infotextcol{
+                p {
+                    //layout
+                    
+                    height: 200px;
+                    padding: 20px;
+                    margin-top: auto;
+        
+                    //style
+                    
+                }
+            }
+    
+    
+        }
+
+        #whatidodiv {
+            #textwhatido {
+                //layout
+                position: relative;
+                top: 0%;
+                left: -500%;
+                padding: 25px;
+                
+                //style
+                color: $first-color;
+                
+            }
+    
+            .animated {
+                animation-name: appearing2;
+                animation-duration: .5s;
+                animation-delay: .2s;
+                animation-fill-mode: forwards;
+                
+            }
+
+            @keyframes appearing2 {
+                from {left: -500%;
+                    }
+                
+                90% {
+                    transform: skew(30deg)
+                }
+               
+                to {left: 0%;
+                    transform: skew(0deg);
+                }
+            }
+
+            .animated {
+                left: 0%;
+            }
+            
+        }
+
+        #whatido1, #whatido2 {
+            .col {
+                
+                
+                    img {
+                        max-width: 250px;
+                        width:100%;
+                        text-align: center;
+                        transition: .3s;
+                    }
+
+                    
+                
+                p {
+                    text-align: center;
+                }
+            }
+        }
+
+    }
+   
+ 
+/* --------Responsive design--------------------------*/
+
+// -------- Pic and textbox 
+
+    
+        @media (min-width: 576px) {
+            
+        }
+
+        @media (min-width: 768px) {
+            
+        }
+
+        @media (min-width: 992px) {
+            
+            
+        }
+
+        @media (min-width: 1200px) {
+            
+            #beforewhatido {
+                height: 160px;
+            }
+            // textbox
+            #aboutsection {
+                #infos {
+                    #willpiccol {
+                        #willpicdiv {
+                            img {
+                                
+                                height: 350px;
+                                width: 350px;
+                                
+                            }
+                            
+                        }
+
+                        
+                    }
+                    #infotextcol{
+                        
+                        position: relative;
+                        p {
+                            //layout
+                            width: 600px;
+                           
+                            
+
+                            //style
+                            
+                        }
+                    }
+                }
+            }
+
+
+
+
+        }
+       
+
+    
+

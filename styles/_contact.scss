@@ -2,7 +2,7 @@
 a {text-decoration: none;}
 #revellipse {
     
-    background-color: #00A166;
+    background-color: $first-color;
     border-radius: 50% / 100%;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -50,14 +50,14 @@ a {text-decoration: none;}
                     
                     box-shadow: none;
                     transition: all .2s ease-in-out;
-                    color: #a1003b;
+                    color: $second-color;
                 }
 
                 .submit {
                     border: none;
                     border-radius: 25px; 
-                    background-color: #a1003b ;
-                    color: white;
+                    background-color: $second-color ;
+                    color: $background-color1;
                     font-size: 1.2rem;
                     font-weight: bold;  
                 }
@@ -82,7 +82,7 @@ a {text-decoration: none;}
 
         #social-row{
             a {
-                color: black;
+                color: $socialiconscolor;
             }
         }
     }
