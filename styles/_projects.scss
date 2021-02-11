@@ -1,24 +1,17 @@
-/* --------- PROJECTS SECTION------------------------------*/
 
-//-------- whole div ----------------------------------
+//---------- PORTFOLIO ---------------------------------
 
-#projects {
-    background-color: $first-color;
-    padding-bottom: 150px;
-}
+#portfolio {
+    .container {
+        margin-top: 100px;
+        margin-bottom: 70px;
 
-// ---------The title --------------------------------
-
-#textbeforeprojects {
-    text-align: center;
-
-    .display-1 {
-    color: $titleoncolor;
-    font-weight: bolder;
+        
     }
-
-
 }
+#portfoliotitlep2 {color: $titleonbackground}
+
+
 
 //---------- CARDS ---------------------------------
 
@@ -72,7 +65,7 @@
         //laptops : gradient 
         @media (hover: hover) and (pointer: fine) {
             background: rgb(2,0,36);
-            background: linear-gradient(0deg, rgba(16,160,178,.4) 0%, rgba(16,160,178,.4)20%, rgba(16,160,178,.4) 100%);     
+            background: linear-gradient(0deg, rgba(1, 44, 236, 0.4) 0%, rgba(1, 44, 236, 0.4)20%, rgba(1, 44, 236, 0.4) 100%);     
         }
     }
     .card-body {
@@ -173,18 +166,13 @@
 
 //-------- STYLE
 .card {
-    border-radius: 0%;
+    border-radius: 12%;
     // hide the card::before part
     overflow: hidden;
     border: none;
     background: rgb(2,0,36);
-    background: linear-gradient(0deg, rgba(16,160,178,.4) 0%, rgba(16,160,178,.4)20%, rgba(16,160,178,.4) 100%);     
-    .card-img-top {}
-
-    .card-img-overlay {
-
-        
-    }
+    background: linear-gradient(0deg, rgba(1, 44, 236, 0.4) 0%, rgba(1, 44, 236, 0.4)20%, rgba(1, 44, 236, 0.4) 100%);     
+    
 
     .card-body {
         color: #fff;

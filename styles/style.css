@@ -253,13 +253,6 @@ nav.sticky {
 } 
 
 */
-.animation-area {
-  background: -webkit-gradient(linear, right top, left top, from(#8942a8), to(#ba382f));
-  background: linear-gradient(to left, #8942a8, #ba382f);
-  width: 0;
-  height: 0;
-}
-
 .box-area {
   position: absolute;
   top: 0;
@@ -338,7 +331,7 @@ nav.sticky {
   0% {
     -webkit-transform: translateY(0) rotate(0deg);
             transform: translateY(0) rotate(0deg);
-    opacity: 1;
+    opacity: .6;
   }
   100% {
     -webkit-transform: translateY(-800px) rotate(360deg);
@@ -351,7 +344,7 @@ nav.sticky {
   0% {
     -webkit-transform: translateY(0) rotate(0deg);
             transform: translateY(0) rotate(0deg);
-    opacity: 1;
+    opacity: .6;
   }
   100% {
     -webkit-transform: translateY(-800px) rotate(360deg);
@@ -360,59 +353,11 @@ nav.sticky {
   }
 }
 
-#landing {
-  background-color: white;
+article#home {
   color: white;
-  height: 100vh;
-  text-align: left;
-  /* --------- part with buttons ------------------------------*/
 }
 
-#landing .mask {
-  height: 100vh;
-}
-
-#landing #hipart {
-  z-index: 999;
-  text-align: center;
-  padding: 25vh 150px;
-}
-
-@media screen and (orientation: portrait) {
-  #landing #hipart {
-    margin-top: 150px;
-    margin-top: 50%;
-    padding: 0;
-  }
-}
-
-@media screen and (orientation: landscape) {
-  #landing #hipart {
-    padding: 25vh 50px;
-  }
-}
-
-#landing #hipart #imwill {
-  color: #ececec;
-  font-weight: normal;
-  padding: 0;
-}
-
-#landing #hipart #webdev {
-  color: #ececec;
-  font-weight: 100;
-  padding: 0;
-}
-
-#landing .mb-5 {
-  display: inline-block;
-  margin: 25px 0 0 0;
-  /* --------- text ------------------------------*/
-  /* --------- get in touch ------------------------------*/
-  /* -------- dl portfolio ------------------------------*/
-}
-
-#landing .mb-5 #btn1 {
+article#home .container .row .col-lg button#getintouch {
   width: 140px;
   height: 40px;
   background-color: rgba(0, 0, 0, 0);
@@ -423,290 +368,397 @@ nav.sticky {
   color: white;
   font-size: 1.2rem;
   font-weight: 400;
-  margin-top: 90%;
 }
 
-@media (max-width: 600px) {
-  #landing .mb-5 #btn1 {
-    width: 40vw;
-  }
+/*
+// 
+#landing {
+    
+    background-color: $background-color1;
+    color: white;
+    height: 100vh;
+    text-align: left;
+
+    .mask {
+        height: 100vh;
+    }
+    
+    #hipart {
+        //border: solid blue;
+        z-index: 999;
+        text-align: center;
+        padding: 25vh 150px;
+        @media screen and (orientation: portrait) {
+            margin-top: 150px;
+            margin-top: 50%;
+            padding: 0;
+        }
+        @media screen and (orientation: landscape) {
+            
+            padding: 25vh 50px;
+        }
+
+
+        #imwill {
+            color: $titleonbackground;
+            font-weight: normal;
+            padding: 0;
+            
+        }
+    
+        #webdev {
+            color: $titleonbackground;
+            font-weight: 100;
+            
+            padding: 0;
+            
+        }
+    }
+
+    
+
+ 
+
+
+/* --------- part with buttons ------------------------------
+
+
+    .mb-5 {
+
+        display: inline-block;
+        margin: 25px 0 0 0;
+
+        /* --------- text ------------------------------
+
+        
+
+        /* --------- get in touch ------------------------------
+    
+        #btn1 {
+            // layout
+            width: 140px;
+            height: 40px;
+            //style
+            background-color: rgba(0,0,0,0);
+            border-radius: 25px;
+            border: solid $titleonbackground;
+            transition: all ease-in-out .2s;
+            // font
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 400; 
+            
+
+            
+            // responsiveness
+
+            //adjusting width on small screens
+            @media (max-width: 600px) {
+                width: 40vw;
+            }
+
+            // adjusting margin 
+            margin-top: 90%;
+            @media screen and (orientation: portrait) {
+                margin-top: 70%;
+            }
+            @media screen and (orientation: landscape) {
+                margin-top: 10%;
+            }
+        }
+        
+        #btn1:hover {
+            color: $first-color;
+            background-color: $background-color1;
+
+            .fa {
+                transition: .3s;
+                transform: rotateZ(90deg);
+            }
+
+            
+        }
+
+        #btn1:focus {
+            box-shadow: none;
+            
+        }
+
+        
+
+       
+    
+        
+    }
+
 }
 
-@media screen and (orientation: portrait) {
-  #landing .mb-5 #btn1 {
-    margin-top: 70%;
-  }
+
+*/
+#about .container {
+  margin-top: 100px;
+  margin-bottom: 70px;
 }
 
-@media screen and (orientation: landscape) {
-  #landing .mb-5 #btn1 {
-    margin-top: 10%;
-  }
+#about .container #titlerow {
+  border: solid red;
 }
 
-#landing .mb-5 #btn1:hover {
-  color: #163e66;
-  background-color: white;
+#about .container #photoandservicerow {
+  border: solid red;
 }
 
-#landing .mb-5 #btn1:hover .fa {
-  -webkit-transition: .3s;
-  transition: .3s;
-  -webkit-transform: rotateZ(90deg);
-          transform: rotateZ(90deg);
+#about .container #photoandservicerow #photocol {
+  border: solid red;
 }
 
-#landing .mb-5 #btn1:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+#about .container #photoandservicerow #servicecol {
+  border: solid red;
 }
 
-#landing .mb-5 #btn2 {
-  width: 220px;
-  height: 40px;
-  margin: 0 15px 0 0;
-  background-color: #fff;
-  border-radius: 25px;
-  border-color: #fff;
-  border: none;
-  color: #5694d0;
-  font-size: 1.2rem;
-  font-weight: bold;
+#about .container #photoandservicerow #servicecol .row {
+  border: solid red;
 }
 
-@media screen and (orientation: portrait) {
-  #landing .mb-5 #btn2 {
-    display: none;
-  }
+#about .container #photoandservicerow #servicecol .row .col {
+  border: solid red;
 }
 
-@media (max-width: 600px) {
-  #landing .mb-5 #btn2 {
-    width: 90vw;
-  }
+#about .container #aboutrow {
+  height: 300px;
+  border: solid red;
+  overflow-y: scroll;
 }
 
-#about {
-  background-color: rgba(198, 228, 255, 0.2);
-}
+/*// self closing div for spacing
+    #about {
+        //background-color: $background-color2;
+        
+    }
 
-#aboutsection {
-  min-height: 100vh;
-  background-color: rgba(198, 228, 255, 0.2);
-}
+    //section
+    #aboutsection {
+        min-height: 100vh;
+        background-color: $background-color2;
+        
 
-#aboutsection #aboutdiv {
-  position: relative;
-}
 
-#aboutsection #aboutdiv #textabout {
-  font-weight: normal;
-  color: #163e66;
-}
+        #aboutdiv {
+            position: relative;
+            #textabout {
+                font-weight: normal;
+                color: $first-color;
+            }
+            .underlined::after {
+                content: "";
+                position: absolute;
+                top: 95%;
+                height: 5px;
+                width: 90px;
+                background-color:$first-color;
+                animation-name: tracing;
+                animation-duration: .5s;
+            }
+            @keyframes tracing {
+                from {width: 0px}
+                to {width: 90px;
+                }
+            }
+        }
+        
+        
 
-#aboutsection #aboutdiv .underlined::after {
-  content: "";
-  position: absolute;
-  top: 95%;
-  height: 5px;
-  width: 90px;
-  background-color: #163e66;
-  -webkit-animation-name: tracing;
-          animation-name: tracing;
-  -webkit-animation-duration: .5s;
-          animation-duration: .5s;
-}
+        #whoiamdiv {
 
-@-webkit-keyframes tracing {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 90px;
-  }
-}
+            #whoiamsquare {
+                position: absolute;
+                height: 150px;
+                width: 150px;
+                background-color: $first-color;
+            }
 
-@keyframes tracing {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 90px;
-  }
-}
+            #textwhoiam {
+                //layout
+                position: relative;
+                top: 0%;
+                
+                padding: 25px;
 
-#aboutsection #whoiamdiv #whoiamsquare {
-  position: absolute;
-  height: 150px;
-  width: 150px;
-  background-color: #163e66;
-}
+                //style
+                color: $first-color;
+            }
 
-#aboutsection #whoiamdiv #textwhoiam {
-  position: relative;
-  top: 0%;
-  padding: 25px;
-  color: #163e66;
-}
+            
+            
+    
+            .animated {
+                animation-name: appearing;
+                animation-duration: .5s;
+                animation-delay: .2s;
+                animation-fill-mode: forwards;
+            }
 
-#aboutsection #whoiamdiv .animated {
-  -webkit-animation-name: appearing;
-          animation-name: appearing;
-  -webkit-animation-duration: .5s;
-          animation-duration: .5s;
-  -webkit-animation-delay: .2s;
-          animation-delay: .2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
+            @keyframes appearing {
+                from {left: -500%}
+                90% {
+                    transform: skew(30deg)
+                }
+                to {left: 0%;
+                    transform: skew(0deg);}
+            }
+        }
+        
 
-@-webkit-keyframes appearing {
-  from {
-    left: -500%;
-  }
-  90% {
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  to {
-    left: 0%;
-    -webkit-transform: skew(0deg);
-            transform: skew(0deg);
-  }
-}
+        #infos {
+            #willpiccol{
 
-@keyframes appearing {
-  from {
-    left: -500%;
-  }
-  90% {
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  to {
-    left: 0%;
-    -webkit-transform: skew(0deg);
-            transform: skew(0deg);
-  }
-}
+            }
+            #infotextcol{
+                p {
+                    //layout
+                    
+                    height: 200px;
+                    padding: 20px;
+                    margin-top: auto;
+        
+                    //style
+                    
+                    
+                    //animation
+                    
+                }
+            }
+            
+            .infoappears {
+                opacity: 0;
+                animation: fadeinanim ease 1s;
+                animation-delay: .8s;
+                animation-fill-mode: forwards;
+                
+            }
 
-#aboutsection #infos #infotextcol p {
-  height: 200px;
-  padding: 20px;
-  margin-top: auto;
-}
+            @keyframes fadeinanim {
+                from {opacity: 0;}
+                to {opacity: 1;}
+            }
+    
+        }
 
-#aboutsection #infos .infoappears {
-  opacity: 0;
-  -webkit-animation: fadeinanim ease 1s;
-          animation: fadeinanim ease 1s;
-  -webkit-animation-delay: .8s;
-          animation-delay: .8s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
+        #whatidodiv {
+            #textwhatido {
+                //layout
+                position: relative;
+                top: 0%;
+                left: -500%;
+                padding: 25px;
+                
+                //style
+                color: $first-color;
+                
+            }
+    
+            .animated {
+                animation-name: appearing2;
+                animation-duration: .5s;
+                animation-delay: .2s;
+                animation-fill-mode: forwards;
+                
+            }
 
-@-webkit-keyframes fadeinanim {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+            @keyframes appearing2 {
+                from {left: -500%;
+                    }
+                
+                90% {
+                    transform: skew(30deg)
+                }
+               
+                to {left: 0%;
+                    transform: skew(0deg);
+                }
+            }
 
-@keyframes fadeinanim {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+            .animated {
+                left: 0%;
+            }
+            
+        }
 
-#aboutsection #whatidodiv #textwhatido {
-  position: relative;
-  top: 0%;
-  left: -500%;
-  padding: 25px;
-  color: #163e66;
-}
+        
+               
+        
 
-#aboutsection #whatidodiv .animated {
-  -webkit-animation-name: appearing2;
-          animation-name: appearing2;
-  -webkit-animation-duration: .5s;
-          animation-duration: .5s;
-  -webkit-animation-delay: .2s;
-          animation-delay: .2s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes appearing2 {
-  from {
-    left: -500%;
-  }
-  90% {
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  to {
-    left: 0%;
-    -webkit-transform: skew(0deg);
-            transform: skew(0deg);
-  }
-}
-
-@keyframes appearing2 {
-  from {
-    left: -500%;
-  }
-  90% {
-    -webkit-transform: skew(30deg);
-            transform: skew(30deg);
-  }
-  to {
-    left: 0%;
-    -webkit-transform: skew(0deg);
-            transform: skew(0deg);
-  }
-}
-
-#aboutsection #whatidodiv .animated {
-  left: 0%;
-}
-
+    }
+   
+ 
 /* --------Responsive design--------------------------*/
-@media (min-width: 1200px) {
-  #beforewhatido {
-    height: 160px;
-  }
-  #aboutsection #infos #willpiccol #willpicdiv img {
-    height: 350px;
-    width: 350px;
-  }
-  #aboutsection #infos #infotextcol {
-    position: relative;
-  }
-  #aboutsection #infos #infotextcol p {
-    width: 600px;
-  }
+/*
+// -------- Pic and textbox 
+
+    
+        @media (min-width: 576px) {
+            
+        }
+
+        @media (min-width: 768px) {
+            
+        }
+
+        @media (min-width: 992px) {
+            
+            
+        }
+
+        @media (min-width: 1200px) {
+            
+            #beforewhatido {
+                height: 160px;
+            }
+            // textbox
+            #aboutsection {
+                #infos {
+                    #willpiccol {
+                        #willpicdiv {
+                            img {
+                                
+                                height: 350px;
+                                width: 350px;
+                                
+                            }
+                            
+                        }
+
+                        
+                    }
+                    #infotextcol{
+                        
+                        position: relative;
+                        p {
+                            //layout
+                            width: 600px;
+                           
+                            
+
+                            //style
+                            
+                        }
+                    }
+                }
+            }
+
+
+
+
+        }
+       
+*/
+#portfolio .container {
+  margin-top: 100px;
+  margin-bottom: 70px;
 }
 
-/* --------- PROJECTS SECTION------------------------------*/
-#projects {
-  background-color: #163e66;
-  padding-bottom: 150px;
-}
-
-#textbeforeprojects {
-  text-align: center;
-}
-
-#textbeforeprojects .display-1 {
-  color: #163e66;
-  font-weight: bolder;
+#portfoliotitlep2 {
+  color: #ececec;
 }
 
 .card {
@@ -763,8 +815,8 @@ nav.sticky {
 @media (hover: hover) and (pointer: fine) {
   .card .card-img-overlay {
     background: #020024;
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(16, 160, 178, 0.4)), color-stop(20%, rgba(16, 160, 178, 0.4)), to(rgba(16, 160, 178, 0.4)));
-    background: linear-gradient(0deg, rgba(16, 160, 178, 0.4) 0%, rgba(16, 160, 178, 0.4) 20%, rgba(16, 160, 178, 0.4) 100%);
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(1, 44, 236, 0.4)), color-stop(20%, rgba(1, 44, 236, 0.4)), to(rgba(1, 44, 236, 0.4)));
+    background: linear-gradient(0deg, rgba(1, 44, 236, 0.4) 0%, rgba(1, 44, 236, 0.4) 20%, rgba(1, 44, 236, 0.4) 100%);
   }
 }
 
@@ -842,12 +894,12 @@ nav.sticky {
 }
 
 .card {
-  border-radius: 0%;
+  border-radius: 12%;
   overflow: hidden;
   border: none;
   background: #020024;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(16, 160, 178, 0.4)), color-stop(20%, rgba(16, 160, 178, 0.4)), to(rgba(16, 160, 178, 0.4)));
-  background: linear-gradient(0deg, rgba(16, 160, 178, 0.4) 0%, rgba(16, 160, 178, 0.4) 20%, rgba(16, 160, 178, 0.4) 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(1, 44, 236, 0.4)), color-stop(20%, rgba(1, 44, 236, 0.4)), to(rgba(1, 44, 236, 0.4)));
+  background: linear-gradient(0deg, rgba(1, 44, 236, 0.4) 0%, rgba(1, 44, 236, 0.4) 20%, rgba(1, 44, 236, 0.4) 100%);
 }
 
 .card .card-body {
@@ -968,5 +1020,42 @@ a {
 
 #footer #social-row a {
   color: black;
+}
+
+.display-1 {
+  color: #ececec;
+}
+
+#nav-bar {
+  z-index: 100000;
+}
+
+#variablecontainer {
+  overflow-y: hidden;
+  height: 100vh;
+  position: relative;
+}
+
+article.visible {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+#home {
+  display: none;
+}
+
+#about {
+  display: none;
+}
+
+#home.visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#about.visible {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

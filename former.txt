@@ -1,0 +1,514 @@
+<!--
+
+
+<!DOCTYPE html>
+<!--
+    FOR BOOTSTRAP TUTO
+    https://www.youtube.com/watch?v=c9B4TPnak1A -->
+
+
+    <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Portfolio</title>
+          <!-- Bootstrap-->
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+          <!-- CSS-->
+          <link rel="stylesheet" href="styles/style.css">
+          <!-- fonts-->
+          <link rel="preconnect" href="https://fonts.gstatic.com">
+          
+          <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+          
+          <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+      
+          
+        </head>
+      <body>
+      
+      
+        <!------------- navbar section ------------------->
+      
+              <section id="nav-bar">
+                  
+                  <nav class="navbar navbar-expand-sm " role="navigation">
+                      <div class="container-fluid" id="navcontainer">
+      
+                        <!------------------logo --------------->
+                          <a id="will" class="navbar-brand text" href="#">William Finzy</a>
+                          
+                          <!------------------toggler --------------->
+                          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                          </button>  
+      
+                          <!------------------navlinks --------------->
+                          <div class="collapse navbar-collapse"  id="navbarSupportedContent" > 
+                              <div class="navbar-nav ms-auto" >       
+                                  <div class="divlink" ><a id="testlink1"   class="nav-link active js-scroll-trigger" href="#">Home</a></div>
+                                  <div class="divlink"><a id="testlink2" class="nav-link active js-scroll-trigger" href="#about">About</a></div>
+                                  <div class="divlink"><a id="testlink3" class="nav-link active js-scroll-trigger" href="#portfolio">Portfolio</a></div>
+                                  <div class="divlink"><a id="testlink4"   class="nav-link active js-scroll-trigger" href="#contact">Contact</a></div>
+                              </div>
+                          </div>          
+                      </div>
+                  </nav>
+              </section>
+              
+        <!------------- landing section ------------------->
+      
+              <!------------  Creating the background------>
+      
+              <section  id="landing" class="bg-image"
+                style=
+                "background-image : url('/pics/cubes.jpg'); 
+                background-size: cover;
+                background-position: center;">
+                
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+                
+                  <div class="animation-area">
+                    <ul class="box-area">
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                      <li></li>
+                    </ul>
+                  </div>
+      
+                  <div class="container">
+      
+                    <section id="landingdiv">
+                       <!-------unique row-------------->
+                      <div class="row d-flex">
+        
+                      
+                      <!-------unique column-------------->
+                      <div class="col-lg" id="hipart">
+                        <p id="imwill" class="display-1 mt-5 mb-0 pb-0">Hi, I'm William.</p>
+                        <p id="webdev" class="display-6 mb-0 pb-0">I build websites.</p>
+                        
+                        
+                          <div class="mb-5">
+                            <button id="btn1">
+                              Get in touch <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </button>
+                            
+                          </div>
+                      </div>
+                      
+                      </div>
+                    </section>
+                    
+                    <div id="myaboutdiv">
+                      <section id="aboutsection">
+      
+                        <div id="aboutdiv"><p class="display-1 d-flex justify-content-center" id="textabout">About</p></div>
+              
+              
+                        <div class="spacingdiv"></div>
+              
+              
+                        <div id="whoiamsquarediv"><div id="whoiamsquare"></div></div>
+                        <div id="whoiamdiv">
+                          <div id="whoiamsquare"></div>
+                          <p class="display-4 d-flex justify-content-center" id="textwhoiam">Who I am</p>
+                        
+                        </div>
+              
+              
+                        <div class="spacingdiv"></div>
+                        
+                        <div class="container-fluid">
+                          <!------------- infos section ------------------->
+                          <div class="row" id="infos">
+              
+                            <div class="col-sm text-center" id="willpiccol">
+                              <div id="willpicdiv"><img class="img-fluid"  id="willpic" src="./pics/avatar.png" alt="mypic"></div>
+                              
+                              
+              
+                            </div>
+              
+                            
+                            <div class="col-sm text-center" id="infotextcol">
+                              <p id="infotext">My name is William. I am a Front-End Developer living
+                                in France. I do some freelancing so feel 
+                                free to <a href="#contact">contact</a> me !
+                              </p>
+                            </div>
+              
+                          </div>
+              
+              
+                          <div class="spacingdiv" id="beforewhatido"></div>
+              
+              
+                          <!------------- offer section ------------------->
+              
+              
+                          <div id="whatidodiv"><p class="display-4 d-flex justify-content-center" id="textwhatido">What I do</p></div>
+                          
+              
+                          <div class="spacingdiv"></div>
+                          <div class="container-fluid">
+                            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4" id="whatidocards">
+                              <div class="col text-center">
+                                <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
+                                <p>Responsive layouts for websites.</p>
+                              </div>
+                              <div class="col text-center">
+                                <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
+                                <p>Intuitive User Interfaces with a special focus on User Experience.</p>
+                              </div>
+                              <div class="col text-center">
+                                <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
+                                <p>Simple and straight-forward design.</p>
+                              </div>
+                              <div class="col text-center">
+                                <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
+                                <p>With some animations to bring life to the pages.</p>
+                              </div>           
+                            </div>
+                        </div>
+              
+                          
+              
+                          <div class="spacingdiv"></div>
+                          <p class="d-flex justify-content-center">Want to work with me ?</p>
+              
+                        </div>
+                        <div class="spacingdiv"></div>
+              
+              
+                      </section>
+      
+                    </div>
+                  
+                   
+                    
+                  </div>
+                </div>
+                
+              </section>
+      
+              
+              <!------------- about section ------------------->
+              <div class="spacingdiv" id="about"></div>
+      
+              <section id="aboutsection">
+      
+                <div id="aboutdiv"><p class="display-1 d-flex justify-content-center" id="textabout">About</p></div>
+      
+      
+                <div class="spacingdiv"></div>
+      
+      
+                <div id="whoiamsquarediv"><div id="whoiamsquare"></div></div>
+                <div id="whoiamdiv">
+                  <div id="whoiamsquare"></div>
+                  <p class="display-4 d-flex justify-content-center" id="textwhoiam">Who I am</p>
+                
+                </div>
+      
+      
+                <div class="spacingdiv"></div>
+                
+                <div class="container-fluid">
+                  <!------------- infos section ------------------->
+                  <div class="row" id="infos">
+      
+                    <div class="col-sm text-center" id="willpiccol">
+                      <div id="willpicdiv"><img class="img-fluid"  id="willpic" src="./pics/avatar.png" alt="mypic"></div>
+                      
+                      
+      
+                    </div>
+      
+                    
+                    <div class="col-sm text-center" id="infotextcol">
+                      <p id="infotext">My name is William. I am a Front-End Developer living
+                        in France. I do some freelancing so feel 
+                        free to <a href="#contact">contact</a> me !
+                      </p>
+                    </div>
+      
+                  </div>
+      
+      
+                  <div class="spacingdiv" id="beforewhatido"></div>
+      
+      
+                  <!------------- offer section ------------------->
+      
+      
+                  <div id="whatidodiv"><p class="display-4 d-flex justify-content-center" id="textwhatido">What I do</p></div>
+                  
+      
+                  <div class="spacingdiv"></div>
+                  <div class="container-fluid">
+                    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4" id="whatidocards">
+                      <div class="col text-center">
+                        <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
+                        <p>Responsive layouts for websites.</p>
+                      </div>
+                      <div class="col text-center">
+                        <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
+                        <p>Intuitive User Interfaces with a special focus on User Experience.</p>
+                      </div>
+                      <div class="col text-center">
+                      </div>
+                      <div class="col text-center">
+                      </div>           
+                    </div>
+                </div>
+      
+                  
+      
+                  <div class="spacingdiv"></div>
+                  <p class="d-flex justify-content-center">Want to work with me ?</p>
+      
+                </div>
+                <div class="spacingdiv"></div>
+      
+      
+              </section>
+      
+           
+      
+      
+              <!------------- projects section ------------------->
+              
+              <section id="portfolio"> <!-- correspond à <article> -->
+      
+                <!------------- container for projects ------------------->
+                <div class="container mx-auto"> <!-- j'ai déjà un conteneur-->
+      
+      
+      
+      
+                  <!------------- text part before portfolio ------------------->
+                  <div id="textbeforeprojects">
+                    <p  class="display-1 d-block mx-auto mb-4 pb-0" id="titleprojects">
+                      Projects
+                    </p>
+                    <p class=" display-6 mx-auto mb-5 pb-0">
+                      Here are the projects I've been working on lately.
+                    </p>
+                  </div>
+      
+      
+      
+                  
+                  <!------------- portfolio ------------------->
+                  <div class="row g-0 justify-content-center">
+                    
+                    <div class="col-auto">
+                        <div class="card">
+                          <img src="./pics/question.png" class="card-img-top" alt="...">
+                          <div class="card-img-overlay card-inverse"></div>
+                          <div class="card-body">
+                            <h5 class="card-title">HelloWatch</h5>
+                            <h6 class="card-subtitle mb-2">Website</h6>
+                            <p class="card-text">Website for a watch company 
+                              named HelloWatch.
+                            </p>
+                            <a href="#" class="btn btn-primary ">See project</a>
+                          </div>
+                        </div>
+                    </div>
+      
+      
+      
+                    <div class="col-auto">
+                      <div class="card">
+                        <img src="./pics/boreal.png" class="card-img-top" alt="...">
+                        <div class="card-img-overlay card-inverse"></div>
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+      
+      
+      
+                    <div class="col-auto">
+                      <div class="card">
+                        <img src="./pics/charcounter.png" class="card-img-top" alt="...">
+                        <div class="card-img-overlay card-inverse"></div>
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    
+      
+                    <div class="col-auto">
+                      <div class="card">
+                        <img src="./pics/charcounter.png" class="card-img-top" alt="...">
+                        <div class="card-img-overlay card-inverse"></div>
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+      
+      
+      
+                    <div class="col-auto">
+                      <div class="card">
+                        <img src="./pics/form.png" class="card-img-top" alt="...">
+                        <div class="card-img-overlay card-inverse"></div>
+                        <div class="card-body">
+                          <h5 class="card-title">Boreal's Survey Form</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">HTML/CSS/Flexbox</h6>
+                          <p class="card-text">Survey Form for a fictive company named Boreal.</p>
+                          <a href="#" class="btn btn-primary">Have a look</a>
+                        </div>
+                      </div>
+                    </div>
+      
+      
+      
+                    <div class="col-auto">
+                      <div class="card">
+                        <img src="./pics/project1.png" class="card-img-top" alt="...">
+                        <div class="card-img-overlay card-inverse"></div>
+                        <div class="card-body">
+                          <h5 class="card-title">Tribute Page to Léo Ferré</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">HTML/CSS</h6>
+                          <p class="card-text">
+                            My first freeCodeCamp project ! Simple tribute page to an artist.</p>
+                          <a href="#" class="btn btn-primary">Have a look</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+                  
+              
+                
+      
+              <!------------- form section ------------------->  
+               
+              <section  id="contact">
+                <div class="container">
+      
+                  <!--  Text before form -->
+                  <div class="row mt-5 d-flex justify-content-center" id="contacttextrow">
+                    <p class='display-3 d-flex justify-content-center' id="contacttext">Contact
+                    </p>
+                    <p class='mt-2 d-flex justify-content-center'>Let's work together !</p>
+                  </div>
+                  
+      
+                  <!-------form------------------------->
+                  <div class="row mt-5 " id="contact-form-row">
+                    
+                    <div class="contact-form d-flex justify-content-center">
+                      <form action="" id="contact-form">
+      
+                        <!-------Name input------------------------->
+                        <input type="text" 
+                        name="name" class="form-control" 
+                        placeholder="Your name" required>
+                        <br>
+      
+                        <!-------Email input------------------------->
+                        <input type="email" 
+                        name="email" class="form-control" 
+                        placeholder="Your email" required>
+                        <br>
+      
+                        <!-------Textarea input------------------------->
+                        <textarea name="message" class="form-control" 
+                        placeholder="Message" row="8" required></textarea><br>
+      
+                        <!-------submit button------------------------->
+                        <input type="submit"class="form-control submit" value="Send">
+      
+      
+                      </form>
+                    </div>
+      
+      
+                  </div>
+      
+                </div>
+              </section>
+      
+              <!------------- footer section ------------------->   
+        
+      
+              <section  id="footer">
+                <div class="container" id="bottom">
+                  <div class="row">
+      
+                    <!-------social icons------------------------->
+                  <div class="row mx-auto mt-3 d-flex justify-content-center" id="social-row">
+                    
+                    <div class="col-auto"><a href="https://github.com/willfynch" target="_blank"><i class="fab fa-github fa-2x"></i></a></div>
+                    <div class="col-auto"><a href="https://www.linkedin.com/in/williamfinzy/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></div>
+                    <div class="col-auto"><i class="fas fa-mobile-alt fa-2x"></i></div>
+                    <div class="col-auto"><i class="fas fa-at fa-2x"></i></div>
+                    <div class="col-auto"><a href="https://twitter.com/willfynch" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a></div>
+                    
+                  </div>
+                  <div>
+                    <p class='mt-2 d-flex justify-content-center'>William Finzy ©2021</p>
+                  </div>
+                </div>
+              </section>
+      
+              <!--------------------------- SCRIPTS ------------------------------------------>
+          
+              <!------ Anime JS-------->
+              <script src="anime.min.js"></script>
+      
+              <!--------  Font Awesome ------->
+      
+              <script src="https://kit.fontawesome.com/b0c30cf22d.js" crossorigin="anonymous"></script>
+      
+              <!------ JQuery -------->
+              <script
+                src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+                crossorigin="anonymous">
+              </script>
+      
+              <!---------------- collapse navbar after click -------------->
+            <script >
+              // collapse navbar after click
+              $(".js-scroll-trigger").click(function(){
+                $(".navbar-collapse").collapse("hide");
+              });
+            </script>
+      
+          
+          <!---------------- Bootstrap -------------->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+          
+          <!---------------- imports -------------->
+          <script src="animations.js" ></script>
+          <script src="navchange.js" ></script>
+         
+      </body>
+      </html>
+
+
+
+-->

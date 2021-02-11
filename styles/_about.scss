@@ -1,7 +1,47 @@
     
-    // self closing div for spacing
+   
+   
+   #about {
+       
+       .container {
+           
+           margin-top: 100px;
+           margin-bottom: 70px;
+           
+            #titlerow {
+                border: solid red;
+            }
+            #photoandservicerow {
+                
+                border: solid red;
+                #photocol{
+                    border: solid red;
+                   
+                    
+               }
+
+                #servicecol {
+                    border: solid red;
+                    .row {border: solid red;
+                        .col {border: solid red;}
+                    }
+
+               }
+           }
+
+           #aboutrow {
+            height: 300px;  
+            border: solid red;
+            overflow-y: scroll;
+           }
+       }
+   }
+   
+   
+   
+   /*// self closing div for spacing
     #about {
-        background-color: $background-color2;
+        //background-color: $background-color2;
         
     }
 
@@ -161,7 +201,7 @@
    
  
 /* --------Responsive design--------------------------*/
-
+/*
 // -------- Pic and textbox 
 
     
@@ -220,6 +260,6 @@
 
         }
        
-
+*/
     
 

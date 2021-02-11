@@ -55,172 +55,157 @@
         
   <!------------- landing section ------------------->
 
-        <!------------  Creating the background----
-          https://c4.wallpaperflare.com/wallpaper/578/505/114/cubes-abstract-wallpaper-preview.jpg------ -->
 
-        <section  id="landing" class="bg-image"
-          style=
-          "background-image : url('/pics/cubes.jpg'); 
-          background-size: cover;
-          background-position: center;">
+  <!--
+
+    fond
+    mask
+    carrés (en-dessous de contenu) /carrés
+    conteneurvariable
+    contenu /contenu (z-index 999)
+    /conteneurvariable
+    /mask
+    /fond
+
+  -->
+
+    <div id="bg" class="bg-image" style="background-image : url('/pics/cubes.jpg'); background-size: cover; background-position: center;">
+      
+      
+
+      <div class="mask" style="background-color: rgba(0, 0, 0, .5)">
+      
+        <ul class="box-area">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+  
           
-          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+        </ul>
           
-            <div class="animation-area">
-              <ul class="box-area">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </div>
+        
+
+
+        <section id="variablecontainer">
+
+          <!------------- HOME ------------------->
+
+          <article id="home" class="">
 
             <div class="container">
-
-              <div id="divtest"></div>
-            
-              <!-------unique row-------------->
-              <div class="row d-flex">
-  
-                
-                <!-------unique column-------------->
-                <div class="col-lg" id="hipart">
-                  <p id="imwill" class="display-1 mt-5 mb-0 pb-0">Hi, I'm William.</p>
-                  <p id="webdev" class="display-6 mb-0 pb-0">I build websites.</p>
-                  
-                  
-                    <div class="mb-5">
-                      <button id="btn1">
+              <div class="row vh-100">
+                  <div class="col-lg d-flex flex-column justify-content-center align-items-center">
+                      <p id="imwill" class="display-1 mt-5 mb-0 pb-0 text-center">Hi, I'm William.</p>
+                      <p id="webdev" class="display-6 mb-0 pb-0 text-center">I build websites.</p>
+                      <button id="getintouch" class="mx-auto">
                         Get in touch <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                      </button>
-                      
+                      </button> 
+                  </div>
+              </div>     
+            </div>
+
+          </article>
+
+
+
+
+<!------------- ABOUT ------------------->
+
+          <article id="about" class=" ">
+            
+
+            <div class="container">
+              
+              <!------------- TITLE ROW ------------------->
+              <div class="row" id="titlerow">
+                <p id="titlep" class="display-1 mb-0 pb-0 text-center">About.</p>
+              </div>
+              <!------------- PHOTO AND SERVICES ROW ------------------->
+              <div class="row" id="photoandservicerow">
+
+                <!------------- PHOTO ------------------->
+
+                <div class="col-md-6" id="photocol">
+                  <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
+
+                  
+                </div>
+
+                <!------------- SERVICES ------------------->
+
+                <div class="col-md-6" id="servicecol">
+                  
+                  <!------------- SERVICEROW 1 ------------------->
+                    <div class="row" id="servicerow1">
+                      <div class="col" id="servicerow1col1">
+                        <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
+                        <p>Responsive layouts for websites.</p>
+
+                      </div>
+                      <div class="col" id="servicerow1col2">
+                        <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
+                        <p>Intuitive User Interfaces with a special focus on User Experience.</p>
+                      </div>
                     </div>
+
+                    <!------------- SERVICEROW 2 ------------------->
+                    <div class="row" id="servicerow2">
+                      <div class="col" id="servicerow2col1">
+                        <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
+                        <p>Simple and straight-forward design.</p>
+
+
+                      </div>
+                      <div class="col" id="servicerow2col2">
+                        <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
+                        <p>With some animations to bring life to the pages.</p>
+
+
+
+                      </div>
+                    </div>
+                  
+                  
                 </div>
-                
               </div>
-              
+
+              <!------------- BIOGRAPHY ------------------->
+
+              <div class="row" id="aboutrow">
+                <div class="col" id="aboutcol">
+                  <p id="imwill" class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima molestiae rem et unde ex ea dolores earum necessitatibus expedita aut tempora hic modi delectus, maiores aspernatur suscipit a neque! Sunt excepturi modi natus est officia vel voluptate. Natus, cum. Molestiae soluta nobis ipsam quod, culpa vel accusantium esse reprehenderit sequi quidem ad repellendus, ipsa, veniam enim harum aut ducimus quo. Delectus soluta accusamus cum deleniti dolorem aliquid fugit facere ratione ad dicta odio ut praesentium sapiente adipisci, esse quae incidunt tenetur libero voluptatibus! Necessitatibus consequatur mollitia minus, dolore atque, culpa in incidunt cupiditate autem beatae quaerat. Magni, et iste, nam numquam voluptates quod ipsum veritatis illum quos possimus cumque sint, quibusdam quaerat! Ab, placeat numquam earum, quod tenetur rerum nulla tempore iusto labore est ad, minima voluptatum enim itaque neque consequuntur sint velit aperiam exercitationem beatae possimus excepturi laudantium. Alias doloribus facilis voluptatum ut deserunt repellendus eum aut quaerat quod, eaque ullam eius inventore commodi esse officiis deleniti ex distinctio! Nemo, excepturi vitae. Tenetur exercitationem praesentium quidem velit quisquam consequatur. Natus beatae architecto soluta ratione officiis esse. Similique, consectetur velit. Laudantium, possimus dolore veritatis aliquid ab tempore quibusdam porro libero sit temporibus quaerat asperiores est corrupti recusandae repellendus reprehenderit illum distinctio? Consectetur illum voluptas, error saepe sint natus maiores minima veniam neque iure harum facilis rem possimus unde ut incidunt quis quas totam? Consequatur exercitationem voluptas laboriosam temporibus necessitatibus veritatis, quisquam perferendis non sed accusantium, ullam qui, vero corrupti ducimus reiciendis rem hic. Quis, voluptatem! Consequuntur, quisquam? Perspiciatis magnam ea blanditiis saepe aspernatur. Cupiditate, pariatur delectus? Deleniti mollitia rerum culpa laudantium nam repellendus, reprehenderit dolorum praesentium ipsam laboriosam laborum tempora velit, asperiores aspernatur delectus aperiam, earum ratione cumque ipsum quibusdam quam doloribus minima quos illum? Sequi itaque minus velit veritatis recusandae suscipit rerum, iusto aliquam impedit maxime est distinctio cupiditate natus illum rem, quia sint voluptate quidem inventore incidunt quae tenetur dolor alias perspiciatis. Officiis, aut? Qui et quis veritatis ratione dolorum rem corrupti animi nihil molestiae dignissimos ipsum laboriosam explicabo exercitationem omnis harum, rerum ut aut. Vel adipisci voluptate veritatis, harum, quia ad non molestias labore cumque nisi ea ut nihil at suscipit repellendus! Animi optio perspiciatis eum eligendi error natus. Tenetur, saepe odit facere quae voluptates et sint in incidunt similique odio. Amet molestias voluptate vero nihil eos obcaecati incidunt esse laborum fugit, quos cum quae ratione temporibus impedit sed praesentium assumenda quis dignissimos commodi reprehenderit autem repudiandae. Beatae quisquam commodi quam ipsa. Iste eaque molestias numquam illum aliquid, vel eos praesentium modi labore aut iure provident repudiandae. Dignissimos quis dolorem illo atque commodi. Cupiditate nemo sit sunt, odio porro commodi provident, natus repellendus aspernatur, amet quae. Rerum eos cupiditate sapiente, culpa maxime nostrum qui ratione nisi, hic fugiat nesciunt esse modi libero consequuntur quidem. Mollitia veniam voluptatum eos ducimus, dolorem laudantium necessitatibus dolore? Magnam consectetur, velit aspernatur incidunt repellat assumenda consequuntur alias. Minus nam non quos sequi expedita, rerum corporis inventore doloribus unde cumque doloremque necessitatibus aut velit distinctio fuga veritatis? Perspiciatis asperiores nisi labore libero rerum eos. Delectus, fuga deserunt fugit animi cupiditate, fugiat accusamus sed eveniet, aliquid tenetur ea itaque excepturi maxime? Maiores, dicta officia! Maiores earum veritatis rem doloribus laborum atque fuga, deleniti numquam expedita sint, libero itaque impedit? Facere iusto pariatur et commodi tempore minima ea, officia, enim dolorum deleniti laudantium earum a, reprehenderit debitis laborum impedit. Placeat voluptatibus cum, magni dolorum, corporis ullam odit nulla quibusdam veniam delectus aliquam! Itaque cum, nam voluptatibus et quibusdam cupiditate minima, illum pariatur eaque ullam doloribus numquam consectetur nemo. Debitis, cumque! Eos sunt, doloribus qui vitae ratione harum molestiae minima unde consequatur? Minus laborum quia velit id rem nulla impedit modi dolorem quam, iusto iure repellendus deleniti nisi repellat veritatis possimus sit optio ipsum. Eos, ex facere totam reiciendis amet incidunt adipisci, dolorem aliquam et quidem cumque blanditiis illo alias, ea optio distinctio eius sequi iste at vitae nesciunt a dicta? Tempore officiis hic vitae ipsam voluptates perferendis minima cupiditate earum dolorem nam corrupti rerum excepturi qui debitis itaque consequuntur cumque quasi laborum voluptas eos quae, reprehenderit pariatur. Cum vitae quod, omnis sit ipsum rem iusto, corrupti deleniti ratione, in repellendus quibusdam rerum reprehenderit eaque magni. Sunt, voluptates dolore. Dolores iste quae deserunt voluptate obcaecati beatae dolorum aliquid, doloribus at assumenda! Et asperiores suscipit placeat natus, unde a atque porro autem ipsum quod deserunt, similique doloribus totam ad maxime illum ipsam molestias repudiandae repellendus, id nihil consectetur voluptatum! Placeat ab perspiciatis unde tempore assumenda accusantium accusamus iure laudantium quibusdam, aliquid, est temporibus sapiente maxime aperiam necessitatibus asperiores explicabo. Impedit architecto commodi minima odit sit praesentium dolores atque harum iure nesciunt, corporis beatae. Eius quae ipsam in provident dolor dolorum cum qui, temporibus, eum quas nulla amet molestiae, eligendi porro? Fugit odit exercitationem recusandae hic sint quasi, quaerat dicta nostrum natus temporibus adipisci tenetur labore a incidunt molestias facilis? Placeat fuga sequi tempora neque voluptatum repudiandae impedit velit ut enim omnis veniam eos, voluptates expedita voluptatem nisi alias optio, qui nesciunt ipsa amet esse at fugit mollitia. Quod possimus, architecto asperiores repudiandae eveniet, libero dignissimos reiciendis id assumenda fugit at ut nobis cum magnam eos quas perferendis, veritatis deleniti fugiat. Saepe qui quis eaque! Voluptate ad aperiam distinctio deleniti officia praesentium repellendus vitae, dolor laudantium, corporis optio voluptatem quidem quae consectetur rem dolorum numquam exercitationem cumque dicta beatae, placeat eum! Atque enim porro, iure, eligendi deserunt sapiente adipisci itaque totam eius, quam veritatis omnis! Aliquam iste temporibus rerum, odio, quas nesciunt harum porro ipsam ratione aliquid, quae eius non. Modi, asperiores! Tempora, similique quasi minima deleniti eos beatae nemo quam, totam cupiditate pariatur laborum ipsum voluptatum doloribus! Tempore sint commodi accusantium et, numquam delectus a incidunt ratione magni. Nam quod velit, reprehenderit quisquam quasi saepe est sed unde nostrum consectetur alias tenetur aliquid quaerat deleniti odio, temporibus sunt necessitatibus illum illo praesentium fugit enim. Sed ex debitis, ipsa eveniet repellat provident. Explicabo tempore neque quis illo aliquam obcaecati at fuga, reprehenderit laudantium commodi, doloribus rerum cum voluptatum quae! Iusto nihil odio deserunt consectetur ullam eum iste cupiditate unde sit quibusdam sint architecto culpa quas, qui excepturi. Quis sequi mollitia deleniti illo deserunt quas quo sit quae adipisci inventore excepturi reprehenderit, soluta eaque eos qui voluptatibus aliquam quasi officiis unde ullam architecto? Tenetur quam incidunt cumque soluta omnis quae exercitationem odio, maiores, sit rem iure labore aliquam minus reiciendis neque adipisci fuga sequi minima. Eveniet error maxime saepe exercitationem, rem ducimus nemo obcaecati iste tenetur, delectus harum sed quis nostrum perferendis et soluta dolores adipisci praesentium ea! Repellendus voluptas magnam distinctio esse non quas tempora explicabo odio. Molestias aliquid velit, consectetur laboriosam reiciendis eveniet labore voluptatem maiores recusandae sed ex. Quod officia soluta, delectus iusto nobis veniam cum excepturi deleniti quasi repudiandae, repellat adipisci earum illum reiciendis quos repellendus dicta quis! Obcaecati doloremque, assumenda, veritatis ad cupiditate voluptates magnam corrupti tempore quae adipisci, omnis rerum unde minus quia necessitatibus! Enim nobis minus rerum dolor. Quam aut quasi qui in porro assumenda repellat, velit tenetur dolore nostrum hic, est quos quas, accusamus vero ea quaerat eligendi pariatur enim nisi voluptatum. Quaerat expedita cupiditate ea nostrum, labore et fugiat possimus dignissimos qui dolore molestias quis! Totam mollitia soluta magni commodi libero ratione, sunt omnis autem fugiat voluptate maiores est cumque esse nesciunt numquam modi? Doloribus expedita quis ipsam reprehenderit similique quo, omnis culpa dolorum! Voluptatum, est optio numquam porro sed iure tempore sint aliquam officiis inventore fugit illo dolor debitis vero perferendis dignissimos. Molestiae minima quas eos distinctio, quibusdam voluptates culpa possimus doloremque eum vero enim, quisquam praesentium, a hic. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint autem a culpa. Eligendi ad, amet atque voluptatibus in obcaecati quas ipsam recusandae totam aliquam, reprehenderit veritatis labore minima dignissimos optio quasi veniam numquam excepturi dolores provident harum. Pariatur similique ipsa temporibus cum delectus tenetur eius voluptate, quibusdam fuga recusandae repudiandae maxime sint necessitatibus accusamus, eaque quo aperiam totam deserunt neque aliquam omnis possimus exercitationem esse? Ratione, incidunt assumenda cupiditate minima quam ullam illum molestias nostrum repellendus voluptas quae, debitis voluptates fugit sint nulla optio eum. Nihil, ex unde aliquam molestiae a aut mollitia voluptate modi eos animi qui ipsa quisquam!</p>
+                  
+                </div>
+              </div>
             </div>
-          </div>
-          
-        </section>
-
-        
-        <!------------- about section ------------------->
-        <div class="spacingdiv" id="about"></div>
-
-        <section id="aboutsection">
-
-          <div id="aboutdiv"><p class="display-1 d-flex justify-content-center" id="textabout">About</p></div>
-
-
-          <div class="spacingdiv"></div>
-
-
-          <div id="whoiamsquarediv"><div id="whoiamsquare"></div></div>
-          <div id="whoiamdiv">
-            <div id="whoiamsquare"></div>
-            <p class="display-4 d-flex justify-content-center" id="textwhoiam">Who I am</p>
-          
-          </div>
-
-
-          <div class="spacingdiv"></div>
-          
-          <div class="container-fluid">
-            <!------------- infos section ------------------->
-            <div class="row" id="infos">
-
-              <div class="col-sm text-center" id="willpiccol">
-                <div id="willpicdiv"><img class="img-fluid"  id="willpic" src="./pics/avatar.png" alt="mypic"></div>
-                
-                
-
-              </div>
-
-              
-              <div class="col-sm text-center" id="infotextcol">
-                <p id="infotext">My name is William. I am a Front-End Developer living
-                  in France. I do some freelancing so feel 
-                  free to <a href="#contact">contact</a> me !
-                </p>
-              </div>
-
-            </div>
-
-
-            <div class="spacingdiv" id="beforewhatido"></div>
-
-
-            <!------------- offer section ------------------->
-
-
-            <div id="whatidodiv"><p class="display-4 d-flex justify-content-center" id="textwhatido">What I do</p></div>
             
+          </article>
 
-            <div class="spacingdiv"></div>
-            <div class="container-fluid">
-              <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4" id="whatidocards">
-                <div class="col text-center">
-                  <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
-                  <p>Responsive layouts for websites.</p>
-                </div>
-                <div class="col text-center">
-                  <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
-                  <p>Intuitive User Interfaces with a special focus on User Experience.</p>
-                </div>
-                <div class="col text-center">
-                  <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
-                  <p>Simple and straight-forward design.</p>
-                </div>
-                <div class="col text-center">
-                  <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
-                  <p>With some animations to bring life to the pages.</p>
-                </div>           
+
+
+
+          <!------------- PORTFOLIO ------------------->
+
+          <article id="portfolio" class="visible">
+
+
+
+
+
+            <div class="container" id="portfoliocontainer">
+
+
+              <!------------- PORTFOLIO TITLE ROW ------------------->
+              <div class="row" id="portfoliotitlerow">
+                <p id="portfoliotitlep" class="display-1 mb-3 pb-0 text-center">Portfolio</p>
+                <p id="portfoliotitlep2" class="text-center mb-5">Here are the projects I have been working on.</p>
               </div>
-          </div>
-
-            
-
-            <div class="spacingdiv"></div>
-            <p class="d-flex justify-content-center">Want to work with me ?</p>
-
-          </div>
-          <div class="spacingdiv"></div>
-
-
-        </section>
-
-
-
-        <!------------- projects section ------------------->
-        
-        <section id="portfolio">
-
-          <!------------- container for projects ------------------->
-          <div class="container mx-auto">
-
-
-
-
-            <!------------- text part before portfolio ------------------->
-            <div id="textbeforeprojects">
-              <p  class="display-1 d-block mx-auto mb-4 pb-0" id="titleprojects">
-                Projects
-              </p>
-              <p class=" display-6 mx-auto mb-5 pb-0">
-                Here are the projects I've been working on lately.
-              </p>
-            </div>
-
-
-
-            
-            <!------------- text part before portfolio ------------------->
-            <div class="row g-0 justify-content-center">
-              
-              <div class="col-auto">
+              <!------------- PORTFOLIO PROJECTS ROW ------------------->
+              <div class="row g-3 justify-content-center">
+                <div class="col-auto">
                   <div class="card">
                     <img src="./pics/question.png" class="card-img-top" alt="...">
                     <div class="card-img-overlay card-inverse"></div>
@@ -234,9 +219,9 @@
                     </div>
                   </div>
               </div>
-
-
-
+  
+  
+  
               <div class="col-auto">
                 <div class="card">
                   <img src="./pics/boreal.png" class="card-img-top" alt="...">
@@ -249,9 +234,9 @@
                   </div>
                 </div>
               </div>
-
-
-
+  
+  
+  
               <div class="col-auto">
                 <div class="card">
                   <img src="./pics/charcounter.png" class="card-img-top" alt="...">
@@ -266,7 +251,7 @@
               </div>
             
               
-
+  
               <div class="col-auto">
                 <div class="card">
                   <img src="./pics/charcounter.png" class="card-img-top" alt="...">
@@ -279,9 +264,9 @@
                   </div>
                 </div>
               </div>
-
-
-
+  
+  
+  
               <div class="col-auto">
                 <div class="card">
                   <img src="./pics/form.png" class="card-img-top" alt="...">
@@ -294,9 +279,9 @@
                   </div>
                 </div>
               </div>
-
-
-
+  
+  
+  
               <div class="col-auto">
                 <div class="card">
                   <img src="./pics/project1.png" class="card-img-top" alt="...">
@@ -310,115 +295,77 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </section>
-            
-        
-          
 
-        <!------------- form section ------------------->  
-         
-        <section  id="contact">
-          <div class="container">
-
-            <!--  Text before form -->
-            <div class="row mt-5 d-flex justify-content-center" id="contacttextrow">
-              <p class='display-3 d-flex justify-content-center' id="contacttext">Contact
-              </p>
-              <p class='mt-2 d-flex justify-content-center'>Let's work together !</p>
-            </div>
-            
-
-            <!-------form------------------------->
-            <div class="row mt-5 " id="contact-form-row">
-              
-              <div class="contact-form d-flex justify-content-center">
-                <form action="" id="contact-form">
-
-                  <!-------Name input------------------------->
-                  <input type="text" 
-                  name="name" class="form-control" 
-                  placeholder="Your name" required>
-                  <br>
-
-                  <!-------Email input------------------------->
-                  <input type="email" 
-                  name="email" class="form-control" 
-                  placeholder="Your email" required>
-                  <br>
-
-                  <!-------Textarea input------------------------->
-                  <textarea name="message" class="form-control" 
-                  placeholder="Message" row="8" required></textarea><br>
-
-                  <!-------submit button------------------------->
-                  <input type="submit"class="form-control submit" value="Send">
-
-
-                </form>
               </div>
-
-
-            </div>
-
-          </div>
-        </section>
-
-        <!------------- footer section ------------------->   
-  
-
-        <section  id="footer">
-          <div class="container" id="bottom">
-            <div class="row">
-
-              <!-------social icons------------------------->
-            <div class="row mx-auto mt-3 d-flex justify-content-center" id="social-row">
               
-              <div class="col-auto"><a href="https://github.com/willfynch" target="_blank"><i class="fab fa-github fa-2x"></i></a></div>
-              <div class="col-auto"><a href="https://www.linkedin.com/in/williamfinzy/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a></div>
-              <div class="col-auto"><i class="fas fa-mobile-alt fa-2x"></i></div>
-              <div class="col-auto"><i class="fas fa-at fa-2x"></i></div>
-              <div class="col-auto"><a href="https://twitter.com/willfynch" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a></div>
-              
+                
+
+
+
             </div>
-            <div>
-              <p class='mt-2 d-flex justify-content-center'>William Finzy ©2021</p>
+
+
+
+
+          </article>
+
+
+
+
+          <!------------- CONTACT ------------------->
+
+          <article id="contact" class="">
+
+            <div class="container">
+              <div class="row vh-100">
+                <div class="col">
+                </div>
+              </div>
             </div>
-          </div>
+
+          </article>
+
+
         </section>
+      
+      
+      </div>
 
-        <!--------------------------- SCRIPTS ------------------------------------------>
-    
-        <!------ Anime JS-------->
-        <script src="anime.min.js"></script>
 
-        <!--------  Font Awesome ------->
+      
 
-        <script src="https://kit.fontawesome.com/b0c30cf22d.js" crossorigin="anonymous"></script>
+    </div>
 
-        <!------ JQuery -------->
-        <script
-          src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-          integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
-          crossorigin="anonymous">
-        </script>
-
-        <!---------------- collapse navbar after click -------------->
-      <script >
-        // collapse navbar after click
-        $(".js-scroll-trigger").click(function(){
-          $(".navbar-collapse").collapse("hide");
-        });
-      </script>
-
-    
-    <!---------------- Bootstrap -------------->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    
-    <!---------------- imports -------------->
-    <script src="animations.js" ></script>
-    <script src="navchange.js" ></script>
-   
+<!--------------------------- SCRIPTS ------------------------------------------>
+          
+              <!------ Anime JS-------->
+              <script src="anime.min.js"></script>
+      
+              <!--------  Font Awesome ------->
+      
+              <script src="https://kit.fontawesome.com/b0c30cf22d.js" crossorigin="anonymous"></script>
+      
+              <!------ JQuery -------->
+              <script
+                src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+                crossorigin="anonymous">
+              </script>
+      
+              <!---------------- collapse navbar after click -------------->
+            <script >
+              // collapse navbar after click
+              $(".js-scroll-trigger").click(function(){
+                $(".navbar-collapse").collapse("hide");
+              });
+            </script>
+      
+          
+          <!---------------- Bootstrap -------------->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+          
+          <!---------------- imports -------------->
+          <script src="animations.js" ></script>
+          <script src="navchange.js" ></script>
 </body>
 </html>

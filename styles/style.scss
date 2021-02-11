@@ -42,9 +42,14 @@ $socialiconscolorhover: white;
     height: 10vh;
 }
 
+
+
+
 @import "./navbar";
 
 @import "./squares";
+
+
 
 @import "./landing";
 
@@ -54,11 +59,30 @@ $socialiconscolorhover: white;
 
 @import "./contact";
 
+.display-1 {
+    color : $titleonbackground;
+}
+#nav-bar {
+    z-index: 100000;
+    
+}
 
+#variablecontainer {
+    overflow-y: hidden;
+    height: 100vh;
+    position: relative;
 
+}
+article.visible {
+    
+    height: 100vh;
+    overflow-y: scroll;
+}
 
-
-
+#home {display: none;}
+#about {display: none;}
+#home.visible {display: flex;}
+#about.visible {display: block;}
 
 
 
