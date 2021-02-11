@@ -360,11 +360,6 @@ nav.sticky {
   }
 }
 
-li:hover {
-  -webkit-box-shadow: 0px 0px 10px 20px white;
-          box-shadow: 0px 0px 10px 20px white;
-}
-
 #landing {
   background-color: white;
   color: white;
@@ -540,10 +535,16 @@ li:hover {
   }
 }
 
+#aboutsection #whoiamdiv #whoiamsquare {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  background-color: #163e66;
+}
+
 #aboutsection #whoiamdiv #textwhoiam {
   position: relative;
   top: 0%;
-  left: -500%;
   padding: 25px;
   color: #163e66;
 }
@@ -593,6 +594,34 @@ li:hover {
   height: 200px;
   padding: 20px;
   margin-top: auto;
+}
+
+#aboutsection #infos .infoappears {
+  opacity: 0;
+  -webkit-animation: fadeinanim ease 1s;
+          animation: fadeinanim ease 1s;
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeinanim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeinanim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #aboutsection #whatidodiv #textwhatido {
@@ -646,18 +675,6 @@ li:hover {
 
 #aboutsection #whatidodiv .animated {
   left: 0%;
-}
-
-#aboutsection #whatido1 .col img, #aboutsection #whatido2 .col img {
-  max-width: 250px;
-  width: 100%;
-  text-align: center;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
-
-#aboutsection #whatido1 .col p, #aboutsection #whatido2 .col p {
-  text-align: center;
 }
 
 /* --------Responsive design--------------------------*/

@@ -9,10 +9,9 @@
     #aboutsection {
         min-height: 100vh;
         background-color: $background-color2;
+        
 
-        
-        
-        
+
         #aboutdiv {
             position: relative;
             #textabout {
@@ -36,21 +35,30 @@
             }
         }
         
-
+        
 
         #whoiamdiv {
+
+            #whoiamsquare {
+                position: absolute;
+                height: 150px;
+                width: 150px;
+                background-color: $first-color;
+            }
+
             #textwhoiam {
                 //layout
                 position: relative;
                 top: 0%;
-                left: -500%;
+                
                 padding: 25px;
 
                 //style
                 color: $first-color;
-                
-    
             }
+
+            
+            
     
             .animated {
                 animation-name: appearing;
@@ -71,6 +79,9 @@
         
 
         #infos {
+            #willpiccol{
+
+            }
             #infotextcol{
                 p {
                     //layout
@@ -81,9 +92,24 @@
         
                     //style
                     
+                    
+                    //animation
+                    
                 }
             }
-    
+            
+            .infoappears {
+                opacity: 0;
+                animation: fadeinanim ease 1s;
+                animation-delay: .8s;
+                animation-fill-mode: forwards;
+                
+            }
+
+            @keyframes fadeinanim {
+                from {opacity: 0;}
+                to {opacity: 1;}
+            }
     
         }
 
@@ -127,24 +153,9 @@
             
         }
 
-        #whatido1, #whatido2 {
-            .col {
-                
-                
-                    img {
-                        max-width: 250px;
-                        width:100%;
-                        text-align: center;
-                        transition: .3s;
-                    }
-
-                    
-                
-                p {
-                    text-align: center;
-                }
-            }
-        }
+        
+               
+        
 
     }
    

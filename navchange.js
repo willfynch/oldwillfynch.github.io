@@ -14,7 +14,7 @@ window.addEventListener("scroll", function(){
 	var nav = document.getElementById("nav-bar");
 
     // add sticky class if condition scroll Y > 0 
-	nav.classList.toggle("sticky", window.scrollY > 180);
+	nav.classList.toggle("sticky", window.scrollY > 750);
 })
 
 

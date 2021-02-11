@@ -61,7 +61,8 @@
         <section  id="landing" class="bg-image"
           style=
           "background-image : url('/pics/cubes.jpg'); 
-          background-size: cover">
+          background-size: cover;
+          background-position: center;">
           
           <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
           
@@ -112,8 +113,19 @@
         <section id="aboutsection">
 
           <div id="aboutdiv"><p class="display-1 d-flex justify-content-center" id="textabout">About</p></div>
+
+
           <div class="spacingdiv"></div>
-          <div id="whoiamdiv"><p class="display-4 d-flex justify-content-center" id="textwhoiam">Who I am</p></div>
+
+
+          <div id="whoiamsquarediv"><div id="whoiamsquare"></div></div>
+          <div id="whoiamdiv">
+            <div id="whoiamsquare"></div>
+            <p class="display-4 d-flex justify-content-center" id="textwhoiam">Who I am</p>
+          
+          </div>
+
+
           <div class="spacingdiv"></div>
           
           <div class="container-fluid">
@@ -129,7 +141,7 @@
 
               
               <div class="col-sm text-center" id="infotextcol">
-                <p>My name is William. I am a Front-End Developer living
+                <p id="infotext">My name is William. I am a Front-End Developer living
                   in France. I do some freelancing so feel 
                   free to <a href="#contact">contact</a> me !
                 </p>
@@ -148,36 +160,29 @@
             
 
             <div class="spacingdiv"></div>
+            <div class="container-fluid">
+              <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4" id="whatidocards">
+                <div class="col text-center">
+                  <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
+                  <p>Responsive layouts for websites.</p>
+                </div>
+                <div class="col text-center">
+                  <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
+                  <p>Intuitive User Interfaces with a special focus on User Experience.</p>
+                </div>
+                <div class="col text-center">
+                  <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
+                  <p>Simple and straight-forward design.</p>
+                </div>
+                <div class="col text-center">
+                  <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
+                  <p>With some animations to bring life to the pages.</p>
+                </div>           
+              </div>
+          </div>
 
-            <div class="row" id="whatido1">
-              <div class="col text-center">
-                <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
-                <p>Lorem ipsum dolor sit, amet 
-                  consectetur adipisicing elit. 
-                  Esse, eligendi!</p>
-              </div>
-              <div class="col text-center">
-                <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
-                <p>Lorem ipsum dolor sit, amet 
-                  consectetur adipisicing elit. 
-                  Esse, eligendi!</p>
-              </div>
-            </div>
+            
 
-            <div class="row" id="whatido2">
-              <div class="col text-center">
-                <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
-                <p>Lorem ipsum dolor sit, amet 
-                  consectetur adipisicing elit. 
-                  Esse, eligendi!</p>
-              </div>
-              <div class="col text-center">
-                <img class="img-fluid" src="./pics/bootstrapicon.png" alt="front-end dev">
-                <p>Lorem ipsum dolor sit, amet 
-                  consectetur adipisicing elit. 
-                  Esse, eligendi!</p>
-              </div>           
-            </div>
             <div class="spacingdiv"></div>
             <p class="d-flex justify-content-center">Want to work with me ?</p>
 
