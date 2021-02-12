@@ -7,6 +7,7 @@ Change navbar color and font-color on scroll position
 // make return top on refresh
 //window.onbeforeunload = () => window.scrollTo(0, 0);
 //document.documentElement.scrollTop = 0; 
+/*
 
 window.addEventListener("scroll", function(){
 
@@ -18,4 +19,4 @@ window.addEventListener("scroll", function(){
 })
 
 
-  
+  */

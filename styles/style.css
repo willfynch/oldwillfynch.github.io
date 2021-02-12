@@ -801,8 +801,8 @@ article#home .container .row .col-lg button#getintouch:hover .fa {
 
 @media (max-width: 380px) {
   .card {
-    width: 260px;
-    height: 260px;
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -948,6 +948,7 @@ article#home .container .row .col-lg button#getintouch:hover .fa {
 .card .card-body .card-title {
   font-size: 1.8rem;
   color: #163e66;
+  text-align: center;
 }
 
 .card .card-body .card-subtitle {
