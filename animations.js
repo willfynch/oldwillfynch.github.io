@@ -76,6 +76,16 @@ document.getElementById("testlink1").addEventListener("click", function(){
     
 })
 
+document.getElementById("will").addEventListener("click", function(){
+
+    // add sticky class if condition scroll Y > 0 
+	home.classList.add("visible");
+    about.classList.remove("visible");
+    portfolio.classList.remove("visible");
+    contact.classList.remove("visible");
+    
+})
+
 
 // print about part
 

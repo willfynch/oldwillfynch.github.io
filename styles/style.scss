@@ -25,7 +25,7 @@ colors for test
 */
 
 $first-color : #163e66;
-$second-color: #5694d0;
+$second-color: #4072a3;
 $third-color: #a5caee;
 
 $background-color1 : white ;
@@ -77,12 +77,34 @@ article.visible {
     
     height: 100vh;
     overflow-y: scroll;
+    
+    transform: perspective(1500px);
+
+    .container {
+        animation-name: test;
+        animation-fill-mode: forwards;
+        animation-duration: 2s;
+        transition: all ease-in-out .5s;
+    }
+}
+
+
+
+@keyframes test {
+    from {opacity: 0;
+        }
+    to {opacity: 1;;
+        }
 }
 
 #home {display: none;}
 #about {display: none;}
+#portfolio {display: none;}
+#contact {display: none;}
 #home.visible {display: flex;}
 #about.visible {display: block;}
+#portfolio.visible {display: block;}
+#contact.visible {display: block;}
 
 
 

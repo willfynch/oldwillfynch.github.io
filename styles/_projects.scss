@@ -24,9 +24,11 @@
         width: 420px;
         height: 420px;
         //900px or less
+        
+        //900px or less
         @media (max-width: 900px) {
-            width: 400px;
-            height: 400px;
+            width: 360px;
+            height: 360px;
         }
         //570px or less
         @media (max-width: 570px) {
@@ -60,35 +62,40 @@
     .card-img-overlay {
 
         // default : dark on smartphones
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(240, 240, 240, 0.6);
 
         //laptops : gradient 
         @media (hover: hover) and (pointer: fine) {
             background: rgb(2,0,36);
             background: linear-gradient(0deg, rgba(1, 44, 236, 0.4) 0%, rgba(1, 44, 236, 0.4)20%, rgba(1, 44, 236, 0.4) 100%);     
         }
+        background: rgb(2,0,36);
+        background: linear-gradient(0deg, rgba(1, 44, 236, 0.4) 0%, rgba(1, 44, 236, 0.4)20%, rgba(1, 44, 236, 0.4) 100%);     
+
     }
     .card-body {
         @media (hover: hover) and (pointer: fine){
             top: -100%;
         }
-
+        top: -100%;
         @media (max-width: 300px) {
             font-size: .7rem;
             margin: 0;
         }
 
         .card-title {}
-        .card-subtitle {}
+        .card-subtitle {
+            margin-bottom: 10px;
+            @media (min-width: 700px) {
+                margin-bottom: 50px;
+            }
+            @media (min-width: 900px) {
+                margin-bottom: 100px;
+            }
+        }
 
         .card-text {
-            @media (min-width: 570px) {
-                margin-top: 40px;
-            }
-
-            @media screen and (orientation:portrait){
-                display: none; 
-            }
+            
         }
 
         .btn {
@@ -98,34 +105,31 @@
                 padding: 0;
                 margin: 0;
             }
+            @media (min-width: 570px) {
+                //margin-top: 40px;
+            }
         }
 
         .btn:hover {}
     }
 }
 
+// card::before - the white overlay - is hidden
 .card::before {
-
-    // default : on phone screen
     top: 120%;
-    // laptop with hover and fine pointer
-    /*@media (hover: hover) and (pointer: fine){
-        top: 120%;
-    }*/
 }
 
 // on laptop when hovered card::before appears from bottom to top
-.card:hover::before{
-    @media (hover: hover) and (pointer: fine){
-        top: 0%;
-    }
+.card:hover::before{ 
+    top: 0%;
 }
 
-// on laptop when hovered card-body appears
+// on laptop when hovered card-body appears lower then for all screens
 .card:hover .card-body {
     @media (hover: hover) and (pointer: fine){
-        top: 40px;
+        top: 10px;
     }
+    top: 0px;
 }
 
 
@@ -148,7 +152,7 @@
         .card-title {}
         .card-subtitle {}
         .card-text {}
-        .btn {}
+        .btn {width: 150px;}
         .btn:hover {}
     }
 }
@@ -175,109 +179,51 @@
     
 
     .card-body {
-        color: #fff;
+        
         transition: .5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
 
         .card-title {
             font-size: 1.8rem;
-            color: silver; 
+            color: $first-color; 
+            
         }
 
         .card-subtitle {
-            color:rgba(218, 218, 218, 1)
+            color: $second-color;
+            
+            
         }
 
         .card-text {
-            color: silver;
-            font-size: 1.2rem
+            color: $first-color;
+            font-size: 1rem;
+            text-align: center;
         }
 
-        .btn {}
-        .btn:hover {}
+        .btn {
+            font-size: 1.1rem;
+            background-color: $first-color;
+            border: solid $first-color thin;
+            color: $titleonbackground;
+        }
+        .btn:hover {
+            background-color: $background-color1;
+            color: $first-color;
+            border: solid #ffffff thin;
+        }
     }
 }
 .card::before {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(240, 240, 240, 0.7);
     transform-origin: center top 0;
     transition: .5s;
 }
 
-// ------------ card
-
-.card {
-    
-    
-    
-    
-
-    // ------------ card body
-
-    .card-body {
-        //layout
-        
-        
-        //style
-        
-        
-        
-        
-        
-        
-        .card-title {
-                                   
-        }
-
-        .card-subtitle {
-            
-        }
-
-        .card-text {
-
-            // layout
-
-            //responsiveness
-            
-
-
-            //style
-            
-
-            
-        }
-        
-        .btn {
-            @media (min-width: 570px) {
-                margin-top: 40px;
-            }
-            
-            font-size: 1.1rem;
-            background-color: rgba(0,0,0,0);
-            border: solid $first-color thin;
-            color: silver;
-        }
-
-        .btn:hover {
-            border: solid #ffffff thin;
-        }
-        
-
-        // for laptop
-        
-        
-    }
-    
-    .card-img-top {
-        border-radius: 0%;
-    }
-
-    .card-img-overlay {
-        
-        
-    }
-
-
-    
-}
 
 
 

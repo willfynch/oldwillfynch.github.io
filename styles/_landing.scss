@@ -28,6 +28,18 @@ article#home {
                     font-weight: 400; 
 
                 }
+
+                button#getintouch:hover {
+                    color: $first-color;
+                    background-color: $background-color1;
+        
+                    .fa {
+                        transition: .3s;
+                        transform: rotateZ(90deg);
+                    }
+        
+                    
+                }
             }
         }
 
